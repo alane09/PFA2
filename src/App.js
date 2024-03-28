@@ -8,20 +8,23 @@ import Courses from './pages/Courses/Courses';
 import About from './pages/About/About';
 import Exams from './pages/Exams/Exams';
 import Contact from './pages/Contact/Contact';
+import TA1 from './pages/Courses/TA1';
+import S11 from './pages/Courses/S11/S1';
+import S12 from './pages/Courses/S2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { SocialIcon } from 'react-social-icons'
 function App() {
   return (
     <div>
-     
-      
-
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/courses' element={<Courses />} />
         <Route path='/about' element={<About />} />
         <Route path='/exams' element={<Exams />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='TA1' element={<TA1 />} />
+        <Route path='S11' element={<S11 />} />
+        <Route path='S12' element={<S12 />} />
       </Routes>
       
       

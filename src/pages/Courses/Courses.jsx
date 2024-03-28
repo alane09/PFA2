@@ -1,5 +1,6 @@
 import React from 'react';
 import './Courses.css';
+import './TA1.jsx'
 import { Link, Routes, Route } from 'react-router-dom';
 import IT from './IT.jpg';
 import setp from './setp2.gif';
@@ -48,8 +49,9 @@ function Courses() {
                                                 <p class="inside-page__text" style={{ color: 'black' }}>
                                                     <strong>1ère année Technologies Avancées S1&S2</strong>
                                                 </p>
-                                                <a href="#" class="inside-page__btn  " style={{ color: 'white' }}>Acces au Cours </a>
-                                            </div>
+                                                <Link to="/TA1" className="inside-page__btn link" style={{ color: 'white' }}>
+                                                    <strong>Accès au cours</strong>
+                                                </Link>                                            </div>
                                         </div>
                                     </div>
                                 </div>
