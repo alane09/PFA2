@@ -22,8 +22,7 @@ function Courses() {
                     <div class="collapse navbar-collapse justify-content-end" id="nav">
                         <ul class="navbar-nav">
                             <li class="item  "><Link to='/' class="link"><strong>ACCEUIL</strong> </Link> </li>
-                            <li class="item current"><Link to='/courses' class="link"><strong>COURS</strong></Link> </li>
-                            <li class="item "><Link to='/exams' class="link"><strong>EXAMENS</strong></Link> </li>
+                            <li class="item current"><Link to='/courses' class="link"><strong>COURS & EXAMENS</strong></Link> </li>
                             <li class="item"><Link to='/about' class="link"><strong>A PROPOS</strong></Link> </li>
                             <li class="item"><Link to='/contact' class="link"><strong>CONTACT</strong></Link> </li>
                         </ul>
@@ -49,8 +48,8 @@ function Courses() {
                                                 <p class="inside-page__text" style={{ color: 'black' }}>
                                                     <strong>1ère année Technologies Avancées S1&S2</strong>
                                                 </p>
-                                                <Link to="/TA1" className="inside-page__btn link" style={{ color: 'white' }}>
-                                                    <strong>Accès au cours</strong>
+                                                <Link to="/TA1" className="inside-page__btn " style={{ color: 'white' }}>
+                                                    <strong>Accès </strong>
                                                 </Link>                                            </div>
                                         </div>
                                     </div>
@@ -72,7 +71,7 @@ function Courses() {
                                                 <p class="inside-page__text" style={{ color: 'black' }}>
                                                     <strong> 2ème année Technologies Avancées S1</strong>
                                                 </p>
-                                                <a href="#" class="inside-page__btn  " style={{ color: 'white' }}>Acces au Cours </a>
+                                                <a href="/Sem1" class="inside-page__btn  " style={{ color: 'white' }}>Accès  </a>
                                             </div>
                                         </div>
                                     </div>
@@ -99,7 +98,7 @@ function Courses() {
                                                 <p class="inside-page__text" style={{ color: 'black' }}>
                                                     <strong>2ème année Systèmes énergétiques et technologies propres</strong>
                                                 </p>
-                                                <a href="#" class="inside-page__btn  " style={{ color: 'white' }}>Acces au Cours </a>
+                                                <a href="/SETP2" class="inside-page__btn  " style={{ color: 'white' }}>Accès  </a>
                                             </div>
                                         </div>
                                     </div>
@@ -121,7 +120,7 @@ function Courses() {
                                                 <p class="inside-page__text" style={{ color: 'black' }}>
                                                     <strong> 2ème année Systèmes industriels et compétitivité</strong>
                                                 </p>
-                                                <a href="#" class="inside-page__btn  " style={{ color: 'white' }}>Acces au Cours </a>
+                                                <a href="/SIC2" class="inside-page__btn  " style={{ color: 'white' }}>Acces </a>
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +142,7 @@ function Courses() {
                                                 <p class="inside-page__text" style={{ color: 'black' }}>
                                                     <strong> 2ème année Electronique avancée et Nanotechnologie</strong>
                                                 </p>
-                                                <a href="#" class="inside-page__btn  " style={{ color: 'white' }}>Acces au Cours </a>
+                                                <a href="/EAN2" class="inside-page__btn  " style={{ color: 'white' }}>Acces  </a>
                                             </div>
                                         </div>
                                     </div>
@@ -158,7 +157,7 @@ function Courses() {
                             <div class="card-1 flip-card mr-5">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <img src={setp} style={{ height: '90%' }} alt="" />
+                                        <img src={setp} style={{ height: '100%' }} alt="" />
                                         <h2><strong>3 SETP</strong></h2>
                                     </div>
                                     <div class="flip-card-back">
@@ -168,9 +167,9 @@ function Courses() {
                                                     3 SETP
                                                 </h3>
                                                 <p class="inside-page__text" style={{ color: 'black' }}>
-                                                    <strong>3 ème année Systèmes énergétiques et technologies propres</strong>
+                                                    <strong>3ème année Systèmes énergétiques et technologies propres</strong>
                                                 </p>
-                                                <a href="#" class="inside-page__btn  " style={{ color: 'white' }}>Acces au Cours </a>
+                                                <a href="SETP3" class="inside-page__btn  " style={{ color: 'white' ,textAlign:'center' }}>Acces  </a>
                                             </div>
                                         </div>
                                     </div>
@@ -192,7 +191,7 @@ function Courses() {
                                                 <p class="inside-page__text" style={{ color: 'black' }}>
                                                     <strong> 3 ème année Systèmes industriels et compétitivité</strong>
                                                 </p>
-                                                <a href="#" class="inside-page__btn  " style={{ color: 'white' }}>Acces au Cours </a>
+                                                <a href="/SIC3" class="inside-page__btn  " style={{ color: 'white' }}>Acces  </a>
                                             </div>
                                         </div>
                                     </div>
@@ -214,7 +213,7 @@ function Courses() {
                                                 <p class="inside-page__text" style={{ color: 'black' }}>
                                                     <strong> 3ème année Electronique avancée et Nanotechnologie</strong>
                                                 </p>
-                                                <a href="#" class="inside-page__btn  " style={{ color: 'white' }}>Acces au Examens  </a>
+                                                <a href="/EAN3" class="inside-page__btn  " style={{ color: 'white' }}>Acces  </a>
                                             </div>
                                         </div>
                                     </div>

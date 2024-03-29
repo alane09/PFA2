@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 function S11() {
     const matieres = [
-        { name: "Analyse pour l’ingénieur", link: "/cours/analyse" },
-        { name: "Probabilités", link: "/cours/probabilites" },
-        { name: "Outils numériques pour l'ingénieur", link: "/cours/outils-numeriques" },
-        { name: "Algorithmique et Programmation", link: "/cours/algorithmique" },
-        { name: "Physique pour l'ingénieur", link: "/cours/physique" },
-        { name: "Mécanique des fluides", link: "/cours/mecanique-fluides" },
-        { name: "Circuits et systèmes électriques", link: "/cours/circuits-electriques" },
-        { name: "Métrologie pour l'ingénieur", link: "/cours/metrologie" },
-        { name: "Semi-conducteurs", link: "/cours/semi-conducteurs" },
-        { name: "Systèmes mécaniques pour la Robotique", link: "/cours/systemes-mecaniques" },
-        { name: "Anglais 1", link: "/cours/anglais-1" },
-        { name: "Comptabilité et Gestion d’entreprise", link: "/cours/comptabilite-gestion" },
-        { name: "Techniques de communication", link: "/cours/techniques-communication" },
+        { name: "Analyse pour l’ingénieur", link: "/Courses/S11/analyse" },
+        { name: "Probabilités", link: "/Courses/S11/probabilites" },
+        { name: "Outils numériques pour l'ingénieur 1 :Matlab ", link: "/Courses/S11/outils-numeriques" },
+        { name: "Algorithmique et Programmation", link: "/Courses/S11/algorithmique" },
+        { name: "Physique pour l'ingénieur", link: "/Courses/S11/physique" },
+        { name: "Mécanique des fluides", link: "/Courses/S11/mecanique-fluides" },
+        { name: "Circuits et systèmes électriques", link: "/Courses/S11/circuits-electriques" },
+        { name: "Métrologie pour l'ingénieur", link: "/Courses/S11/metrologie" },
+        { name: "Semi-conducteurs", link: "/Courses/S11/semi-conducteurs" },
+        { name: "Systèmes mécaniques pour la Robotique", link: "/Courses/S11/systemes-mecaniques" },
+        { name: "Anglais 1", link: "/Courses/S11/anglais-1" },
+        { name: "Comptabilité et Gestion d’entreprise", link: "/Courses/S11/comptages" },
+        { name: "Techniques de communication", link: "/Courses/S11/communication " },
     ];
     const columns = [
         {
@@ -66,8 +66,8 @@ function S11() {
                   <div class="collapse navbar-collapse justify-content-end" id="nav">
                       <ul class="navbar-nav">
                           <li class="item  "><Link to='/' class="link"><strong>ACCEUIL</strong> </Link> </li>
-                          <li class="item "><Link to='/courses' class="link"><strong>COURS</strong></Link> </li>
-                          <li class="item "><Link to='/exams' class="link"><strong>EXAMENS</strong></Link> </li>
+                            <li class="item "><Link to='/coursesexams' class="link"><strong>COURS & EXAMENS</strong></Link> </li>
+
                           <li class="item"><Link to='/about' class="link"><strong>A PROPOS</strong></Link> </li>
                           <li class="item"><Link to='/contact' class="link"><strong>CONTACT</strong></Link> </li>
                       </ul>
@@ -84,7 +84,8 @@ function S11() {
                             <MDBTableHead>
                                 <tr>
                                     <th scope="col" style={headerCellStyle}><strong> Matières </strong></th>
-                                    <th scope="col" style={headerCellStyle}><strong>Accéder au cours</strong></th>
+                                    <th scope="col" style={headerCellStyle}><strong>Accéder aux Cours & Examens  </strong></th>
+                                    
 
                                     
                                 </tr>

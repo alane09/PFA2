@@ -37,8 +37,7 @@ function TA1() {
                     <div class="collapse navbar-collapse justify-content-end" id="nav">
                         <ul class="navbar-nav">
                             <li class="item  "><Link to='/' class="link"><strong>ACCEUIL</strong> </Link> </li>
-                            <li class="item current"><Link to='/courses' class="link"><strong>COURS</strong></Link> </li>
-                            <li class="item "><Link to='/exams' class="link"><strong>EXAMENS</strong></Link> </li>
+                            <li class="item "><Link to='/coursesexams' class="link"><strong>COURS & EXAMENS</strong></Link> </li>
                             <li class="item"><Link to='/about' class="link"><strong>A PROPOS</strong></Link> </li>
                             <li class="item"><Link to='/contact' class="link"><strong>CONTACT</strong></Link> </li>
                         </ul>
