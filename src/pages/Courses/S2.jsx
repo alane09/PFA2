@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 function S12() {
     const matieres = [
-        { name: "Analyse numérique", link: "/Courses/S12/analyse2" },
-        { name: "Optimisation ", link: "/Courses/S12/optimisation " },
-        { name: "Statistiques pour l'ingénieur ", link: "/Courses/S12/stat" },
+        { name: "Analyse numérique", link: "/AN" },
+        { name: "Optimisation ", link: "/Optimisation " },
+        { name: "Statistiques pour l'ingénieur ", link: "/Stat" },
         { name: "Introduction à l'ERP ", link: "/Courses/S12/erp" },
-        { name: "Programmation orientée objet ", link: "/Courses/S12/java" },
+        { name: "Programmation orientée objet ", link: "/Java" },
         { name: "Outils numériques pour l'ingénieur 2 : CATIA ", link: "/Courses/S12/catia" },
-        { name: "Thermodynamique pour l'ingénieur", link: "/Courses/S12/thermo" },
-        { name: "Electronique des composants", link: "/Courses/S12/electcomposants" },
-        { name: "Asservissement et Régulation Industrielle", link: "/Courses/S12/asservi " },
+        { name: "Thermodynamique pour l'ingénieur", link: "/Thermodynamique" },
+        { name: "Electronique des composants", link: "/Electcomposants" },
+        { name: "Asservissement et Régulation Industrielle", link: "/Asservissement" },
         { name: "Anglais 2", link: "/Courses/S12/anglais-2" },
         { name: "Droit ", link: "/Courses/S12/droit " },
         { name: "Philo pour l'ingénieur ", link: "/Courses/S12/philo" },
@@ -52,24 +52,7 @@ function S12() {
     return (
         <div>
             <body>
-                <nav class="navbar navbar-expand-lg navbar-light stick</nav></nav>y-top">
-                    <div class="imageBox">
-                        <a href="index.html"><img src="logo.png" alt="image-box" class="logo" style={{ marginLeft: '1rem', width: '300px', height: '100' }} /></a>
-                    </div>
-                    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#nav"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon bg-light"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="nav">
-                        <ul class="navbar-nav">
-                            <li class="item  "><Link to='/' class="link"><strong>ACCEUIL</strong> </Link> </li>
-                            <li class="item "><Link to='/coursesexams' class="link"><strong>COURS & EXAMENS</strong></Link> </li>
-
-                            <li class="item"><Link to='/about' class="link"><strong>A PROPOS</strong></Link> </li>
-                            <li class="item"><Link to='/contact' class="link"><strong>CONTACT</strong></Link> </li>
-                        </ul>
-                    </div>
-                </nav>
+                
                 <main>
                     <div class="container">
                         <h1 style={{ textAlign: 'center' }}><strong> Matières de  1ère année :Semestre 2</strong> </h1>

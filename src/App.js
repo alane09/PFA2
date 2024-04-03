@@ -1,6 +1,6 @@
 import './App.css';
-import { Link, Routes, Route } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
+import {  Routes, Route } from 'react-router-dom';
+
 //import Nav from 'react-bootstrap/Nav';
 //import Navbar from 'react-bootstrap/Navbar';
 import Home from './pages/Home/Home';
@@ -17,15 +17,47 @@ import SETP2 from './pages/Courses/TA2/Setp2';
 import SETP3 from './pages/Courses/3TA/Setp3';
 import SIC2 from './pages/Courses/TA2/SIC2';
 import SIC3 from './pages/Courses/3TA/SIC3';
+//1TA S1
+import Analyse from './pages/Courses/S11/Analyse';
+import Probabilité from './pages/Courses/S11/Proba';
+import Algo from './pages/Courses/S11/Algo';
+import Matlab from './pages/Courses/S11/Matlab';
+import Physique from './pages/Courses/S11/Physique';
+import MecaniqueFluides from './pages/Courses/S11/MecaniqueFluides';
+import CircuitsElectriques from './pages/Courses/S11/CircuitsElectriques';
+import Metrologie from './pages/Courses/S11/Metrologie';
+import SemiConducteurs from './pages/Courses/S11/SemiConducteurs';
+import SystemesMecaniques from './pages/Courses/S11/SystemesMecaniques';
+import Anglais1 from './pages/Courses/S11/Anglais1';
+import Communication from './pages/Courses/S11/Communication';
+import ComptaGest from './pages/Courses/S11/ComptaGest';
+//1TA S2
+import AN from './pages/Courses/S12/AN';
+import Optimisation from './pages/Courses/S12/Optimisation';
+import Java from './pages/Courses/S12/Java';
+import Thermodynamique from './pages/Courses/S12/Thermo';
+import Electcomposants from './pages/Courses/S12/Electcomposants';
+import Asservissement from './pages/Courses/S12/Asservissement';
+//2TA S1
+import CalculSc from './pages/Courses/TA2/s1/CS';
+import Statistiques from './pages/Courses/S12/Stat';
+import RO from './pages/Courses/TA2/s1/RO';
+import Traitement from './pages/Courses/TA2/s1/Traitement';
+
+
+import UploadFile from './components/UploadFile'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import FetchAPI from './components/FetchAPI';
+import PDFVIEW from './components/PDFVIEW';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { SocialIcon } from 'react-social-icons'
 
 function App() {
   return (
     <div>
-      
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/coursesexams' element={<CoursesExams  />} />
@@ -41,90 +73,40 @@ function App() {
         <Route path='EAN3' element={<EAN3 />} />
         <Route path='SETP3' element={<SETP3 />} />
         <Route path='SIC3' element={<SIC3 />} />
+
+
+        <Route path='Analyse' element={<Analyse />} />
+        <Route path='Probabilité' element={<Probabilité />} />
+        <Route path='Algo' element={<Algo />} />
+        <Route path='Matlab' element={<Matlab />} />
+        <Route path='Physique' element={<Physique />} />
+        <Route path='MecaniqueFluides' element={<MecaniqueFluides />} />
+        <Route path='CircuitsElectriques' element={<CircuitsElectriques />} />
+        <Route path='Metrologie' element={<Metrologie />} />
+        <Route path='SemiConducteurs' element={<SemiConducteurs />} />
+        <Route path='SystemesMecaniques' element={<SystemesMecaniques />} />
+        <Route path='Anglais1' element={<Anglais1 />} />
+        <Route path='Communication' element={<Communication />} />
+        <Route path='ComptaGest' element={<ComptaGest />} />
+        <Route path='AN' element={<AN />} />
+        <Route path='Optimisation' element={<Optimisation />} />
+        <Route path='Java' element={<Java />} />
+        <Route path='Thermodynamique' element={<Thermodynamique />} />
+        <Route path='Electcomposants' element={<Electcomposants />} />
+        <Route path='Asservissement' element={<Asservissement />} />
+        <Route path='Stat' element={<Statistiques />} />
+        <Route path='RO' element={<RO />} />
+        <Route path='CS' element={<CalculSc />} />
+        <Route path='Traitement' element={<Traitement />} />
+        <Route path="/uploadfile" element={<UploadFile />} />
+        <Route path="/fetchapi" element={<FetchAPI />} />
+        <Route path="/pdfview" element={<PDFVIEW />} />
+
       </Routes>
+      <Footer />
       
       
-      <footer class="footer-distributed">
-
-        <div class="footer-left">
-          <img src="logo.png" alt="image-box" class="logo" style={{ marginLeft: '1rem', width: '300px', height: '100' }} />
-          <p className="footer-links">
-            <li class="item  "><Link to='/' class="link"><strong style={{ color:'#555555'}}>ACCEUIL</strong> </Link> </li>
-            <li class="item "><Link to='/coursesexams' class="link"><strong style={{ color: '#555555' }}>COURS & EXAMENS</strong></Link> </li>
-            <li class="item"><Link to='/about' class="link"><strong style={{ color: '#555555' }}>A PROPOS</strong></Link> </li>
-            <li class="item"><Link to='/contact' class="link"><strong style={{ color: '#555555' }}>CONTACT</strong></Link> </li>
-            
-            
-            
-            
-          </p>
-          <p className="footer-company-name"><strong> Copyright © 2024 </strong> <strong style={{ color: 'rgb(10, 10, 232)' }}>  ENSTA</strong> <strong style={{ color: 'rgb(10, 10, 232)' }}>LEARN</strong> <strong>All rights reserved</strong></p>
-        </div>
-        <div class="footer-center">
-          <div class="center-link">
-            <a href="#"><i class="fa fa-phone"></i></a>
-            <p><strong style={{ color: 'rgb(9, 9, 10)' }}>Aymen Sahbani  </strong>
-              <a href="tel:+21696029283" style={{ color: 'rgb(14, 111, 223)' }}>+21696029283</a>
-            </p>
-            <div class="center-link">
-              <a href="#"><i class="fa fa-phone"></i></a>
-              <p><strong style={{ color: 'rgb(9, 9, 10)' }}>Ala Neji </strong>
-                <a href="tel:+21624640536" style={{ color: 'rgb(14, 111, 223)' }}> +21624640536 </a>
-                </p>
-
-            </div>
-            <div class="center-link">
-              <a href="mailto:aymen.sahbani@enstab.ucar.tn"><i class="fa fa-envelope"></i></a>
-              <p><a style={{ color: 'black' }} href="mailto:aymen.sahbani@enstab.ucar.tn ">aymen.sahbani@enstab.ucar.tn</a></p>
-            </div>
-            <div class="center-link">
-              <a href="mailto:alaa.neji@enstab.ucar.tn"><i class="fa fa-envelope"></i></a>
-              <p><a style={{ color: 'black' }} href="mailto:alaa.neji@enstab.ucar.tn ">alaa.neji@enstab.ucar.tn</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="footer-right">
-          <p class="footer-company-about">
-            <span>About Us</span>
-            <strong style={{ color: 'black' }}>ENSTALEARN is a website aim to help students from ENSTAB to find easily the courses and
-              exams </strong>
-
-          </p>
-          <div class="footer-icons">
-            <p>Ala Neji |
-              <SocialIcon
-                url="https://www.facebook.com/alaane09"
-                style={{ height: 25, width: 25 }}
-              />
-              <SocialIcon
-                url="https://www.instagram.com/ala.ne/"
-                style={{ height: 25, width: 25 }}
-              />
-              <SocialIcon
-                url="https://github.com/alane09"
-                style={{ height: 25, width: 25 }}
-              />
-            </p>
-             
-
-          </div>
-          <div class="footer-icons">
-            <p>Aymen Sahbani | <SocialIcon
-              url="https://www.facebook.com/alaane09"
-              style={{ height: 25, width: 25 }}
-            />
-              <SocialIcon
-                url="https://www.instagram.com/ala.ne/"
-                style={{ height: 25, width: 25 }}
-              />
-              <SocialIcon
-                url="https://github.com/alane09"
-                style={{ height: 25, width: 25 }}
-              />
-            </p>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   
   );
