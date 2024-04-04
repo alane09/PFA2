@@ -45,11 +45,9 @@ import RO from './pages/Courses/TA2/s1/RO';
 import Traitement from './pages/Courses/TA2/s1/Traitement';
 
 
-import UploadFile from './components/UploadFile'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import FetchAPI from './components/FetchAPI';
-import PDFVIEW from './components/PDFVIEW';
+
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -98,9 +96,7 @@ function App() {
         <Route path='RO' element={<RO />} />
         <Route path='CS' element={<CalculSc />} />
         <Route path='Traitement' element={<Traitement />} />
-        <Route path="/uploadfile" element={<UploadFile />} />
-        <Route path="/fetchapi" element={<FetchAPI />} />
-        <Route path="/pdfview" element={<PDFVIEW />} />
+        
 
       </Routes>
       <Footer />

@@ -393,3 +393,14 @@ img {
     justify-content: center;
     align-items: center;
 }
+.Download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column    ;
+    gap: 24px;
+    width: 100vw;
+    height: 100vh;
+    
+
+}
