@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 function Setp2() {
     const commun = [
-        { name: "Modélisation mathématique pour l'industrie 4.0", link: "/Courses/TA2/S2/commun/modelisation"},
-        { name: "Matériaux avancés et nanocomposite", link: "/Courses/TA2/S2/commun/nano" },
-        { name: "Capteurs et instrumentation", link: "/Courses/TA2/S2/commun/cap&inst"},
-        { name: "Electronique pour les systèmes embarqués", link: "/Courses/TA2/S2/commun/electronique"},
-        { name: "Automate programmable industriel", link: "/Courses/TA2/S2/commun/API" },
-        { name: "Outils numériques pour l'ingénieur 4", link: "/Courses/TA2/S2/commun/outils" },
-        { name: "Anglais 4  ", link: "/Courses/TA2/S2/commun/anglais"},
-        { name: "Culture entrepreneuriale", link:"/Courses/TA2/S2/commun/culture" },
-        { name: "Langue: Allemand ou  Jappnais ", link: "/Courses/TA2/S2/commun/langue"},
+        { name: "Modélisation mathématique pour l'industrie 4.0", link: "/Modelisation"},
+        { name: "Matériaux avancés et nanocomposite", link: "/Nano" },
+        { name: "Capteurs et instrumentation", link: "/Capteurs"},
+        { name: "Electronique pour les systèmes embarqués", link: "/ElectroniqueEmbarquee"},
+        { name: "Automate programmable industriel", link: "/API" },
+        { name: "Outils numériques pour l'ingénieur 4", link: "/Outils" },
+        { name: "Anglais 4  ", link: "/Anglais"},
+        { name: "Culture entrepreneuriale", link:"/Culture" },
+        { name: "Langue: Allemand ou  Jappnais ", link: "/Langue"},
     ]
     const setp = [
-        { name: "Conversion de l'énergie thermique", link: "/Courses/TA2/S2/setp/conversion" },
-        { name: "Machines électriques et convertisseurs statiques", link: "/Courses/TA2/S2/setp/MEconvert" },
-        { name: "Mécanique des fluides et machines hydrauliques", link: "/Courses/TA2/S2/setp/MFMH" },
-        { name: "Bilan et dimensionnement des systèmes énergétiques", link: "/Courses/TA2/S2/setp/BDSE" },
+        { name: "Conversion de l'énergie thermique", link: "/Conversion" },
+        { name: "Machines électriques et convertisseurs statiques", link: "/MEconvert" },
+        { name: "Mécanique des fluides et machines hydrauliques", link: "/MFMH" },
+        { name: "Bilan et dimensionnement des systèmes énergétiques", link: "/BDSE" },
     ]
     const columns = [
         {

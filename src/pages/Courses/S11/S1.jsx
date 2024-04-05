@@ -6,7 +6,7 @@ function S11() {
         { name: "Analyse pour l’ingénieur", link: "/Analyse" },
         { name: "Probabilités", link: "/Probabilité" },
         { name: "Outils numériques pour l'ingénieur 1 :Matlab ", link: "/Matlab" },
-        { name: "Algorithmique et Programmation", link: "/Algo" },
+        { name: "Algorithmique et Programmation ", link: "/Algo" },
         { name: "Physique pour l'ingénieur", link: "/Physique" },
         { name: "Mécanique des fluides", link: "/MecaniqueFluides" },
         { name: "Circuits et systèmes électriques", link: "/CircuitsElectriques" },

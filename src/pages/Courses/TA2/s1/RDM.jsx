@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios';
-
-export default function Thermo() {
+//exception fl examen=1 mouch 0 
+const RDM = () => {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
 
@@ -9,7 +10,7 @@ export default function Thermo() {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "thermo" && course.examen === 0
+                course.matiere === "RDM" && course.examen === 1
 
             ));
             setCourses(filteredCourses);
@@ -22,7 +23,7 @@ export default function Thermo() {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "thermo" && course.examen === 1
+                course.matiere === "RDM" && course.examen === 0
             ));
             setExams(filteredExams);
         } catch (error) {
@@ -52,7 +53,7 @@ export default function Thermo() {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong> Thermodynamique Pour L'ingénieur</strong></h1>
+                    <h1 style={{ textAlign: 'center' }}><strong> Résistance des matériaux</strong></h1>
                 </div>
                 <div className='container'>
                     <h1 style={{ textAlign: 'center' }}><strong>Cours et TD</strong></h1>
@@ -79,4 +80,4 @@ export default function Thermo() {
     );
 };
 
-
+export default RDM;

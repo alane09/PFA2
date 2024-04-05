@@ -7,16 +7,16 @@ function Sem21() {
         { name: "Processus Stochastiques", link: "/Courses/TA2/s1/stochastiques" },
         { name: "Calcul Scientifique", link: "/CS" },
         { name: "Intelligence Artificielle", link: "/Courses/TA2/s1/ai" },
-        { name: "Outils numériques pour l'ingénieur 3 : Linux", link: "/Courses/TA2/s1/linux" },
-        { name: "Résistance des matériaux", link: "/Courses/TA2/s1/rdm" },
-        { name: "Transferts thermiques", link: "/Courses/TA2/s1/transferts" },
-        { name: "Physique des Matériaux", link: "/Courses/TA2/s1/pdm" },
+        { name: "Outils numériques pour l'ingénieur 3 : Linux", link: "/Linux" },
+        { name: "Résistance des matériaux", link: "/RDM" },
+        { name: "Transferts thermiques", link: "/Transfert" },
+        { name: "Physique des Matériaux", link: "/PDM" },
         { name: "Techniques de Traitement d'images", link: "/Traitement" },
-        { name: "Fonctions de l’électronique", link: "/Courses/TA2/s1/electronique" },
-        { name: "Anglais 3", link: "/Courses/TA2/s1/anglais" },
-        { name: "Gestion des projets", link: "/Courses/TA2/s1/ges-proj" },
-        { name: "Management des équipes", link: "/Courses/TA2/s1/manag-equip" },
-        { name: "Langue :Allemand ou  Japonais ", link: "/Courses/TA2/s1/langue" }
+        { name: "Fonctions de l’électronique", link: "/Electronique" },
+        { name: "Anglais 3", link: "/Anglais" },
+        { name: "Gestion des projets", link: "/Ges-proj" },
+        { name: "Management des équipes", link: "/Manag-equip" },
+        { name: "Langue :Allemand ou  Japonais ", link: "/Langue" }
     ];
     const columns = [
         {

@@ -3,15 +3,14 @@ import axios from 'axios';
 
 const Proba = () => {
     const [courses, setCourses] = useState([]);
-    const [fileContent, setFileContent] = useState("");
+    const [exams, setExams] = useState([]);
 
     const getCourses = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/api/courses');
+            const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.niveau === "1TA" &&
-                course.semestre === "1" &&
-                course.matiere === "Probabilité"
+                course.matiere === "proba" && course.examen === 0 && course.id !== 90
+
             ));
             setCourses(filteredCourses);
         } catch (error) {
@@ -19,12 +18,15 @@ const Proba = () => {
         }
     };
 
-    const getFileContent = async (fileName) => {
+    const getExams = async () => {
         try {
-            const response = await axios.get(`http://localhost:8080/courses/${fileName}`);
-            setFileContent(response.data);
+            const response = await axios.get('http://localhost:8080/api/exams');
+            const filteredExams = response.data.filter(course => (
+                course.matiere === "proba" && course.examen === 1
+            ));
+            setExams(filteredExams);
         } catch (error) {
-            console.error('Error getting file content:', error.message);
+            console.error('Error getting exams:', error.message);
         }
     };
 
@@ -41,22 +43,36 @@ const Proba = () => {
         return uniqueNames.sort(); // Sort unique names alphabetically
     };
 
-
     useEffect(() => {
         getCourses();
+        getExams();
     }, []);
 
     return (
-        <div className='container'>
-            <h1 style={{ textAlign: 'center' }}>Cours et TD</h1>
-            <ul>
-                {removeDuplicateNames(courses).map((name, index) => (
-                    <li key={index}>
-                        {name.substring(0, name.length - 4)} {/* Extract file name without ".pdf" */}
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <body>
+            <main>
+                <div className='container'>
+                    <h1 style={{ textAlign: 'center' }}>Cours et TD</h1>
+                    <ul>
+                        {removeDuplicateNames(courses).map((name, index) => (
+                            <li key={index}>
+                                {name.substring(0, name.length - 4)} {/* Extract file name without ".pdf" */}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className='container'>
+                    <h1 style={{ textAlign: 'center' }}>Ds et Examens</h1>
+                    <ul>
+                        {removeDuplicateNames(exams).map((name, index) => (
+                            <li key={index}>
+                                {name.substring(0, name.length - 4)} {/* Extract file name without ".pdf" */}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </main>
+        </body>
     );
 };
 
