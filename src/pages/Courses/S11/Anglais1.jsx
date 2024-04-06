@@ -8,7 +8,7 @@ export default function Anglais1() {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "Algo" && course.examen === 0
+                course.matiere === "anglais" && course.examen === 0
 
             ));
             setCourses(filteredCourses);
@@ -21,7 +21,7 @@ export default function Anglais1() {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "Algo" && course.examen === 1
+                course.matiere === "anglais" && course.examen === 1
             ));
             setExams(filteredExams);
         } catch (error) {
@@ -55,22 +55,18 @@ export default function Anglais1() {
                 </div>
                 <div className='container'>
                     <h1 style={{ textAlign: 'center' }}><strong>Cours et TD</strong></h1>
-                    <ul style={{ textAlign: 'left', fontSize: '20px' }} >
-                        {removeDuplicateNames(courses).map((name, index) => (
-                            <li key={index}>
-                                <strong> {name.substring(0, name.length - 4)} </strong>{/* Extract file name without ".pdf" */}
-                            </li>
-                        ))}
+                    <ul style={{ textAlign: 'left', fontSize: '20px' }}>
+                        <br />
+                        <h2 style={{ textAlign: 'left' }}><strong>Les Cours et TDs seront disponibles ultérieurement.</strong></h2>
+
                     </ul>
                 </div>
                 <div className='container'>
                     <h1 style={{ textAlign: 'center' }}><strong>Ds et Examens</strong></h1>
                     <ul style={{ textAlign: 'left', fontSize: '20px' }}>
-                        {removeDuplicateNames(exams).map((name, index) => (
-                            <li key={index}>
-                                <strong> {name.substring(0, name.length - 4)} </strong>{/* Extract file name without ".pdf" */}
-                            </li>
-                        ))}
+                        <br />
+                                <h2 style={{ textAlign: 'left' }}><strong>Les Ds et examens seront disponibles ultérieurement.</strong></h2>
+                       
                     </ul>
                 </div>
             </main>

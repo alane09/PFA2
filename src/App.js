@@ -7,6 +7,7 @@ import CoursesExams from './pages/Courses/Courses';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import File from './components/File';
+import UploadFile from './components/UploadFile';
 import TA1 from './pages/Courses/TA1';
 import S11 from './pages/Courses/S11/S1';
 import S12 from './pages/Courses/S2';
@@ -119,9 +120,11 @@ function App() {
         <Route path='BDSE' element={<BDSE />} />
         <Route path='Conversion' element={<Conversion />} />
 
+        
+
       </Routes>
       <Footer />
-      
+     
       
       
     </div>

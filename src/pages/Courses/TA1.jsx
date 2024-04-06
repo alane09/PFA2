@@ -65,8 +65,8 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA
-                                                        </a> <a href="">S1</a>
+                                                        <a href="/TA1">1TA
+                                                        </a> <a href="/S11">S1</a>
                                                     </li>
                                                 </ol>
                                                 <h2 class="post-title">
@@ -86,11 +86,11 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S1</a>
+                                                        <a href="/TA1">1TA</a> <a href="/S11">S1</a>
                                                     </li>
                                                 </ol>
                                                 <h2 class="post-title">
-                                                    <a href="#">Probabilités
+                                                    <a href="/Probabilité">Probabilités
                                                     </a>
                                                 </h2>
                                             </figcaption>
@@ -106,11 +106,10 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S1</a>
-                                                    </li>
+                                                        <a href="/TA1">1TA</a> <a href="/S11">S1</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title">
-                                                    <a href="#">Algorithmique et Programmation
+                                                    <a href="/Algo">Algorithmique et Programmation
                                                     </a>
                                                 </h2>
                                             </figcaption>
@@ -126,8 +125,7 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S1</a>
-                                                    </li>
+                                                        <a href="/TA1">1TA</a> <a href="/S11">S1</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title">
                                                     <a href="#">Mécanique des fluides
@@ -146,8 +144,7 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S1</a>
-                                                    </li>
+                                                        <a href="/TA1">1TA</a> <a href="/S11">S1</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title">
                                                     <a href="#">Systèmes mécaniques pour la Robotique
@@ -166,8 +163,7 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S1</a>
-                                                    </li>
+                                                        <a href="/TA1">1TA</a> <a href="/S11">S1</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title">
                                                     <a href="#">Physique pour l'ingénieur
@@ -186,8 +182,7 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S2</a>
-                                                    </li>
+                                                        <a href="/TA1">1TA</a> <a href="/S12">S2</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title"> <a href="#"> Statistiques pour l'ingénieur </a> </h2>
 
@@ -205,8 +200,7 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S2</a>
-                                                    </li>
+                                                        <a href="/TA1">1TA</a> <a href="/S12">S2</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title">
                                                     <a href="#"> Programmation orientée objet
@@ -225,7 +219,7 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S2</a>
+                                                        <a href="/TA1">1TA</a> <a href="/S12">S2</a>
                                                     </li>
                                                 </ol>
                                                 <h2 class="post-title">
@@ -245,7 +239,7 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S2</a>
+                                                        <a href="/TA1">1TA</a> <a href="/S12">S2</a>
                                                     </li>
                                                 </ol>
                                                 <h2 class="post-title">
@@ -264,7 +258,7 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S2</a>
+                                                        <a href="/TA1">1TA</a> <a href="/S12">S2</a>
                                                     </li>
 
                                                 </ol>
@@ -285,7 +279,7 @@ function TA1() {
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
-                                                        <a href="">1TA</a> <a href="">S2</a>
+                                                        <a href="/TA1">1TA</a> <a href="/S12">S2</a>
                                                     </li>
 
                                                 </ol>

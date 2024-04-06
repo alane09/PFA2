@@ -9,8 +9,7 @@ const Proba = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "proba" && course.examen === 0 && course.id !== 90
-
+                course.matiere === "proba" && course.examen === 0
             ));
             setCourses(filteredCourses);
         } catch (error) {
@@ -22,7 +21,7 @@ const Proba = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "proba" && course.examen === 1
+                course.matiere === "proba" && course.examen === 1 && course.id !== 65
             ));
             setExams(filteredExams);
         } catch (error) {
@@ -52,21 +51,24 @@ const Proba = () => {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}>Cours et TD</h1>
-                    <ul>
+                    <h1 style={{ textAlign: 'center' }}><strong> Probabilités</strong></h1>
+                </div>
+                <div className='container'>
+                    <h1 style={{ textAlign: 'center' }}><strong>Cours et TD</strong></h1>
+                    <ul style={{ textAlign: 'left', fontSize: '20px' }} >
                         {removeDuplicateNames(courses).map((name, index) => (
                             <li key={index}>
-                                {name.substring(0, name.length - 4)} {/* Extract file name without ".pdf" */}
+                                <strong> {name.substring(0, name.length - 4)} </strong>{/* Extract file name without ".pdf" */}
                             </li>
                         ))}
                     </ul>
                 </div>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}>Ds et Examens</h1>
-                    <ul>
+                    <h1 style={{ textAlign: 'center' }}><strong>Ds et Examens</strong></h1>
+                    <ul style={{ textAlign: 'left', fontSize: '20px' }}>
                         {removeDuplicateNames(exams).map((name, index) => (
                             <li key={index}>
-                                {name.substring(0, name.length - 4)} {/* Extract file name without ".pdf" */}
+                                <strong> {name.substring(0, name.length - 4)} </strong>{/* Extract file name without ".pdf" */}
                             </li>
                         ))}
                     </ul>
@@ -75,5 +77,6 @@ const Proba = () => {
         </body>
     );
 };
+
 
 export default Proba;

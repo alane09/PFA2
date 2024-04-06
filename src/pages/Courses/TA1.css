@@ -6,7 +6,8 @@
 }
 
 body {
-    width: 100vw;
+    width: auto;
+    height: auto;
     text-align: center;
     padding-top: 10px;
     height :80%;

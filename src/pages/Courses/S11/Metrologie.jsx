@@ -51,23 +51,22 @@ export default function Anglais1() {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}>Cours et TD</h1>
-                    <ul>
-                        {removeDuplicateNames(courses).map((name, index) => (
-                            <li key={index}>
-                                {name.substring(0, name.length - 4)} {/* Extract file name without ".pdf" */}
-                            </li>
-                        ))}
+                    <h1 style={{ textAlign: 'center' }}><strong> Métrologie pour l'ingénieur </strong></h1>
+                </div>
+                <div className='container'>
+                    <h1 style={{ textAlign: 'center' }}><strong>Cours et TD</strong></h1>
+                    <ul style={{ textAlign: 'left', fontSize: '20px' }}>
+                        <br />
+                        <h2 style={{ textAlign: 'left' }}><strong>Les Cours et TDs seront disponibles ultérieurement.</strong></h2>
+
                     </ul>
                 </div>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}>Ds et Examens</h1>
-                    <ul>
-                        {removeDuplicateNames(exams).map((name, index) => (
-                            <li key={index}>
-                                {name.substring(0, name.length - 4)} {/* Extract file name without ".pdf" */}
-                            </li>
-                        ))}
+                    <h1 style={{ textAlign: 'center' }}><strong>Ds et Examens</strong></h1>
+                    <ul style={{ textAlign: 'left', fontSize: '20px' }}>
+                        <br />
+                        <h2 style={{ textAlign: 'left' }}><strong>Les Ds et examens seront disponibles ultérieurement.</strong></h2>
+
                     </ul>
                 </div>
             </main>
