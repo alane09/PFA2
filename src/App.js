@@ -47,6 +47,8 @@ import Traitement from './pages/Courses/TA2/s1/Traitement';
 import RDM from './pages/Courses/TA2/s1/RDM';
 import PDM from './pages/Courses/TA2/s1/PDM';
 import Transfert from './pages/Courses/TA2/s1/Transfert';
+import GestProj from './pages/Courses/TA2/s1/GestProj';
+
 //2TA Commun S2
 import Modelisation from './pages/Courses/TA2/S2/commun/Modelisation';
 import Nano from './pages/Courses/TA2/S2/commun/Nano';
@@ -123,6 +125,7 @@ function App() {
         <Route path='RDM' element={<RDM />} />
         <Route path='PDM' element={<PDM />} />
         <Route path='Transfert' element={<Transfert />} />
+        <Route path='GestProj' element={<GestProj />} />
         <Route path='Modelisation' element={<Modelisation />} />
         <Route path='Nano' element={<Nano />} />
         <Route path='Capteurs' element={<Capteurs />} />

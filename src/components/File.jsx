@@ -1,13 +1,13 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import './File.css';
 
 function File() {
     const [selectedFile, setSelectedFile] = useState(null);
     const [niveau, setNiveau] = useState(null);
     const [specialite, setSpecialite] = useState(null);
     const [matiere, setMatiere] = useState(null);
-    const [examen, setExamen] = useState(null);
-    const [cours, setCours] = useState(null);
+    const [type, setType] = useState('cours'); // Initialize with 'cours'
     const [semestre, setSemestre] = useState(null);
 
     const handleFileChange = (event) => {
@@ -16,58 +16,64 @@ function File() {
 
     const handleNiveauChange = (event) => {
         setNiveau(event.target.value);
-    }
+    };
 
     const handlespecialiteChange = (event) => {
-        setSpecialite(event.target.value)
+        setSpecialite(event.target.value);
     };
 
     const handleMatiereChange = (event) => {
-        setMatiere(event.target.value)
+        setMatiere(event.target.value);
     };
 
-    const handleexamenChange = (event) => {
-        setExamen(event.target.value)
-    };
-
-    const handlecoursChange = (event) => {
-        setCours(event.target.value)
+    const handleTypeChange = (event) => {
+        setType(event.target.value); // Update type based on selected option
     };
 
     const handlesemestreChange = (event) => {
-        setSemestre(event.target.value)
+        setSemestre(event.target.value);
     };
 
     const handleUpload = async () => {
         try {
             const formData = new FormData();
             formData.append('exam', selectedFile);
+
+            formData.append('file', selectedFile);
             formData.append('niveau', niveau);
             formData.append('specialite', specialite);
             formData.append('matiere', matiere);
-            formData.append('examen', examen);
-            formData.append('cours', cours);
             formData.append('semestre', semestre);
+            formData.append('examen', type === 'cours' ? 0 : 1); // Set examen based on type selection
+            formData.append('cours', type === 'cours' ? 1 : 0); // Set cours based on type selection
 
             const response = await axios.post('http://localhost:8080/api/exams', formData);
 
             console.log(response.data);
         } catch (error) {
-            console.error('Error uploading exam:', error.message);
+            console.error('Error uploading file:', error.message);
         }
     };
 
-    return (
-        <div>
-            <input type="file" onChange={handleFileChange} />
-            <input type="text" placeholder='Niveau' onChange={handleNiveauChange} />
 
-            <label htmlFor="spécialités">Choisir spécialité:</label>
-            <select name="spécialités" id="spécialités" onChange={handlespecialiteChange}>
+    return (
+        <div className='container'>
+            <h1 className='header'>Ajouter un Cours/Td ou Ds/Examens</h1>
+            <br />
+            <br />
+            <label className='label' htmlFor="file">Choisir le fichier:</label>
+            <input className='input' type="file" id="file" onChange={handleFileChange} />
+            <br />
+            <label className='label' htmlFor="niveau">Niveau:</label>
+            <input className='input' type="text" id="niveau" placeholder='Niveau' onChange={handleNiveauChange} />
+            <br />
+            <label className='label' htmlFor="semestre">Semestre:</label>
+            <input className='input' type="text" id="semestre" placeholder='Semestre' onChange={handlesemestreChange} />
+            <br />
+            <label className='label' htmlFor="specialite">Choisir spécialité:</label>
+            <select className='select' name="specialite" id="specialite" onChange={handlespecialiteChange}>
                 <option value="1TA S1">1 TA S1 </option>
                 <option value="1TA S2">1 TA S2 </option>
-
-
                 <option value="2TA">2 TA S1</option>
                 <option value="2SIC">2 SIC</option>
                 <option value="2EAN">2 EAN</option>
@@ -76,7 +82,7 @@ function File() {
                 <option value="3EAN">3 EAN</option>
                 <option value="3SETP">3 SETP</option>
             </select>
-
+            <br />
             {specialite === "1TA S1" && (
                 <div>
                     <label htmlFor="matières">Choisir matière:</label>
@@ -132,20 +138,19 @@ function File() {
                         <option value="Techniques de Traitement d'images">Techniques de Traitement d'images</option>
                         <option value="Fonctions de l’électronique">Fonctions de l’électronique</option>
                         <option value="Anglais 3">Anglais 3</option>
-                        <option value="Gestion des projets">Gestion des projets</option>
+                        <option value="GestProj">Gestion des projets</option>
                         <option value="Management des équipes">Management des équipes</option>
                         <option value="Langue :Allemand ou  Japonais">Langue :Allemand ou  Japonais</option>
                     </select>
                 </div>
             )}
-
-            
-
-            <input type="text" placeholder='examen' onChange={handleexamenChange} />
-            <input type="number" placeholder='cours' onChange={handlecoursChange} />
-            <input type="text" placeholder='Semestre' onChange={handlesemestreChange} />
-
-            <button onClick={handleUpload}>Upload</button>
+            <label className='label' htmlFor="type">Type de fichier:</label>
+            <select className='select' id="type" onChange={handleTypeChange}>
+                <option value="cours">Cours</option>
+                <option value="exam">Examen</option>
+            </select>
+            <br />
+            <button className='button' onClick={handleUpload}>Upload</button>
         </div>
     );
 }

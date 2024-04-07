@@ -14,7 +14,7 @@ function Sem21() {
         { name: "Techniques de Traitement d'images", link: "/Traitement" },
         { name: "Fonctions de l’électronique", link: "/Electronique" },
         { name: "Anglais 3", link: "/Anglais" },
-        { name: "Gestion des projets", link: "/Ges-proj" },
+        { name: "Gestion des projets", link: "/GestProj" },
         { name: "Management des équipes", link: "/Manag-equip" },
         { name: "Langue :Allemand ou  Japonais ", link: "/Langue" }
     ];
