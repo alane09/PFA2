@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-export default function Anglais1() {
+export default function Metrologie () {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
 

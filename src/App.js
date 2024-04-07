@@ -7,7 +7,7 @@ import CoursesExams from './pages/Courses/Courses';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import File from './components/File';
-import UploadFile from './components/UploadFile';
+import PDFView from './components/PdfViewer';
 import TA1 from './pages/Courses/TA1';
 import S11 from './pages/Courses/S11/S1';
 import S12 from './pages/Courses/S2';
@@ -47,14 +47,25 @@ import Traitement from './pages/Courses/TA2/s1/Traitement';
 import RDM from './pages/Courses/TA2/s1/RDM';
 import PDM from './pages/Courses/TA2/s1/PDM';
 import Transfert from './pages/Courses/TA2/s1/Transfert';
+//2TA Commun S2
 import Modelisation from './pages/Courses/TA2/S2/commun/Modelisation';
 import Nano from './pages/Courses/TA2/S2/commun/Nano';
 import Capteurs from './pages/Courses/TA2/S2/commun/Capteurs';
+//2 SETP
 import MFMH from './pages/Courses/TA2/S2/setp/MFMH';
 import MEconvert from './pages/Courses/TA2/S2/setp/MEconvert';
 import BDSE from './pages/Courses/TA2/S2/setp/BDSE';
 import Conversion from './pages/Courses/TA2/S2/setp/Conversion';
-
+//2EAN
+import Conception from './pages/Courses/TA2/S2/ean/Conception';
+import MEMS from './pages/Courses/TA2/S2/ean/Mems';
+import Hyper from './pages/Courses/TA2/S2/ean/Hyper';
+import Nanocomposite from './pages/Courses/TA2/S2/ean/NanoComposites';
+//2Sic
+import Manufacturing from './pages/Courses/TA2/S2/sic/Manufacuring';
+import MO1 from './pages/Courses/TA2/S2/sic/MO1';
+import RO2 from './pages/Courses/TA2/S2/sic/RO2';
+import SixSigma from './pages/Courses/TA2/S2/sic/Sixsigma';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -115,17 +126,24 @@ function App() {
         <Route path='Modelisation' element={<Modelisation />} />
         <Route path='Nano' element={<Nano />} />
         <Route path='Capteurs' element={<Capteurs />} />
+      
         <Route path='MFMH' element={<MFMH />} />
         <Route path='MEconvert' element={<MEconvert />} />
         <Route path='BDSE' element={<BDSE />} />
         <Route path='Conversion' element={<Conversion />} />
+        <Route path='Conception' element={<Conception />} />
+        <Route path='MEMS' element={<MEMS />} />
+        <Route path='Hyper' element={<Hyper />} />
+        <Route path='Nanocomposite' element={<Nanocomposite />} />
+        <Route path='Manufacturing' element={<Manufacturing />} />
+        <Route path='MO1' element={<MO1 />} />
+        <Route path='RO2' element={<RO2 />} />
+        <Route path='SixSigma' element={<SixSigma />} />
 
-        
+        <Route path='PDFView' element={<PDFView />} />
 
       </Routes>
       <Footer />
-     
-      
       
     </div>
   

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import PDFView from '../../../components/PdfViewer';
 export default function Anglais1() {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);

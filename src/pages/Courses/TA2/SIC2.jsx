@@ -14,10 +14,10 @@ function SIC2() {
         { name: "Langue: Allemand ou  Jappnais ", link: "/Langue" },
     ]
     const sic= [
-        { name: "Manufacturing Execution System", link: "/Courses/TA2/S2/sic/manufacturing" },
-        { name: "Management des opérations 1", link: "/Courses/TA2/S2/sic/MO1" },
-        { name: "Recherche Opérationnelle 2", link: "/Courses/TA2/S2/sic/ro2" },
-        { name: "Six Sigma  ", link: "/Courses/TA2/S2/sic/6sigma" },
+        { name: "Manufacturing Execution System", link: "/Manufacturing" },
+        { name: "Management des opérations 1", link: "/MO1" },
+        { name: "Recherche Opérationnelle 2", link: "/RO2" },
+        { name: "Six Sigma  ", link: "/Sixsigma" },
     ]
     const columns = [
         {

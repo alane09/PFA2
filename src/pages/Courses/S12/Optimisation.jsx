@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PDFView from '../../../components/PdfViewer';
 import axios from 'axios';
 
 const Optimisation = () => {
@@ -54,26 +55,9 @@ const Optimisation = () => {
                 <div className='container'>
                     <h1 style={{ textAlign: 'center' }}><strong> Optimisation</strong></h1>
                 </div>
-                <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong>Cours et TD</strong></h1>
-                    <ul style={{ textAlign: 'left', fontSize: '20px' }} >
-                        {removeDuplicateNames(courses).map((name, index) => (
-                            <li key={index}>
-                                <strong> {name.substring(0, name.length - 4)} </strong>{/* Extract file name without ".pdf" */}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong>Ds et Examens</strong></h1>
-                    <ul style={{ textAlign: 'left', fontSize: '20px' }}>
-                        {removeDuplicateNames(exams).map((name, index) => (
-                            <li key={index}>
-                                <strong> {name.substring(0, name.length - 4)} </strong>{/* Extract file name without ".pdf" */}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                <PDFView title="Cours et TD" items={courses} />
+                <PDFView title="Ds et Examens" items={exams} />
+
             </main>
         </body>
     );

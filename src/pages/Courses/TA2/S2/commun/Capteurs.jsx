@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios';
+import PDFView from '../../../../../components/PdfViewer';
 const Capteurs = () => {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
@@ -54,26 +55,9 @@ const Capteurs = () => {
                 <div className='container'>
                     <h1 style={{ textAlign: 'center' }}><strong> Capteurs et instrumentation</strong></h1>
                 </div>
-                <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong>Cours et TD</strong></h1>
-                    <ul style={{ textAlign: 'left', fontSize: '20px' }} >
-                        {removeDuplicateNames(courses).map((name, index) => (
-                            <li key={index}>
-                                <strong> {name.substring(0, name.length - 4)} </strong>{/* Extract file name without ".pdf" */}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong>Ds et Examens</strong></h1>
-                    <ul style={{ textAlign: 'left', fontSize: '20px' }}>
-                        {removeDuplicateNames(exams).map((name, index) => (
-                            <li key={index}>
-                                <strong> {name.substring(0, name.length - 4)} </strong>{/* Extract file name without ".pdf" */}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                <PDFView title="Cours et TD" items={courses} />
+                <PDFView title="Ds et Examens" items={exams} />
+
             </main>
         </body>
     );

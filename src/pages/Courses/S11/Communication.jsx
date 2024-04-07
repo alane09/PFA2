@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-export default function Anglais1() {
+export default function Communication() {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
 
@@ -51,7 +51,7 @@ export default function Anglais1() {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong> Anglais 1 </strong></h1>
+                    <h1 style={{ textAlign: 'center' }}><strong> Techniques de communication </strong></h1>
                 </div>
                 <div className='container'>
                     <h1 style={{ textAlign: 'center' }}><strong>Cours et TD</strong></h1>

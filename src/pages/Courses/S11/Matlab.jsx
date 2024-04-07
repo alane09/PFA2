@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-export default function Anglais1() {
+import PDFView from '../../../components/PdfViewer';
+export default function Matlab() {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
 

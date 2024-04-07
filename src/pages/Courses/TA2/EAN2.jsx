@@ -14,10 +14,10 @@ function EAN2() {
         { name: "Langue: Allemand ou  Jappnais ", link: "/Langue" },
     ]
     const ean  = [
-        { name: "Conception des systèmes électroniques", link: "/Courses/TA2/S2/ean/conception" },
-        { name: "Technologies de μfabrication et MEMS", link: "/Courses/TA2/S2/ean/MEMS" },
-        { name: "Électronique hyperfréquence", link: "/Courses/TA2/S2/ean/ElectHyper" },
-        { name: "Fabrication et techniques de carac. De nanomatériaux et nanocomposites", link: "/Courses/TA2/S2/ean/nanocomposite " },
+        { name: "Conception des systèmes électroniques", link: "/Conception" },
+        { name: "Technologies de μfabrication et MEMS", link: "/MEMS" },
+        { name: "Électronique hyperfréquence", link: "/Hyper" },
+        { name: "Fabrication et techniques de carac. De nanomatériaux et nanocomposites", link: "/Nanocomposite " },
     ]
     const columns = [
         {
