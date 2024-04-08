@@ -23,7 +23,7 @@ const Capteurs = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "capteur" && course.examen === 1
+                course.matiere === "capteur" && course.examen === 1 && course.id !== 260
             ));
             setExams(filteredExams);
         } catch (error) {

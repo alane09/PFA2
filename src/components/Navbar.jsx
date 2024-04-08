@@ -15,9 +15,11 @@ const Navbar = () => {
                 <ul className="navbar-nav">
                     <li className="item"><Link to='/' className="link"><strong>ACCEUIL</strong> </Link> </li>
                     <li className="item"><Link to='/coursesexams' className="link"><strong>COURS & EXAMENS</strong></Link> </li>
-                    <li className="item"><Link to='/about' className="link"><strong>A PROPOS</strong></Link> </li>
-                    <li className="item"><Link to='/contact' className="link"><strong>CONTACT</strong></Link> </li>
                     <li className="item"><Link to='/file' className="link"><strong>UPLOAD</strong></Link> </li>
+
+                    <li className="item"><Link to='/about' className="link"><strong>A PROPOS</strong></Link> </li>
+
+                    <li className="item"><Link to='/contact' className="link"><strong>CONTACT</strong></Link> </li>
                 </ul>
             </div>
         </nav>

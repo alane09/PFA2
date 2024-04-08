@@ -53,6 +53,8 @@ import GestProj from './pages/Courses/TA2/s1/GestProj';
 import Modelisation from './pages/Courses/TA2/S2/commun/Modelisation';
 import Nano from './pages/Courses/TA2/S2/commun/Nano';
 import Capteurs from './pages/Courses/TA2/S2/commun/Capteurs';
+import ElectroniqueEmbarquee from './pages/Courses/TA2/S2/commun/ElectroniqueEmbarquée';
+import API from './pages/Courses/TA2/S2/commun/API';
 //2 SETP
 import MFMH from './pages/Courses/TA2/S2/setp/MFMH';
 import MEconvert from './pages/Courses/TA2/S2/setp/MEconvert';
@@ -64,10 +66,11 @@ import MEMS from './pages/Courses/TA2/S2/ean/Mems';
 import Hyper from './pages/Courses/TA2/S2/ean/Hyper';
 import Nanocomposite from './pages/Courses/TA2/S2/ean/NanoComposites';
 //2Sic
-import Manufacturing from './pages/Courses/TA2/S2/sic/Manufacuring';
+import Manufacturing from './pages/Courses/TA2/S2/sic/Manufacturing';
 import MO1 from './pages/Courses/TA2/S2/sic/MO1';
 import RO2 from './pages/Courses/TA2/S2/sic/RO2';
 import SixSigma from './pages/Courses/TA2/S2/sic/Sixsigma';
+
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -129,6 +132,8 @@ function App() {
         <Route path='Modelisation' element={<Modelisation />} />
         <Route path='Nano' element={<Nano />} />
         <Route path='Capteurs' element={<Capteurs />} />
+        <Route path='ElectroniqueEmbarquee' element={<ElectroniqueEmbarquee />} />
+        <Route path='API' element={<API />} />
       
         <Route path='MFMH' element={<MFMH />} />
         <Route path='MEconvert' element={<MEconvert />} />

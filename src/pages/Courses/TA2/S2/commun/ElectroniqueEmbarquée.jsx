@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import PDFView from '../../../../../components/PdfViewer';
-export default function RO2() {
+export default function ElectroniqueEmbarquee() {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
 
@@ -9,7 +9,7 @@ export default function RO2() {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "RO2" && course.examen === 0 && course.id !== 254
+                course.matiere === "electrembar" && course.examen === 0 && course.id !== 254
 
             ));
             setCourses(filteredCourses);
@@ -22,7 +22,7 @@ export default function RO2() {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "RO2" && course.examen === 1
+                course.matiere === "electrembar" && course.examen === 1
             ));
             setExams(filteredExams);
         } catch (error) {
@@ -52,7 +52,7 @@ export default function RO2() {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong> Recherche Opérationnelle 2</strong></h1>
+                    <h1 style={{ textAlign: 'center' }}><strong> Gestion des Projets </strong></h1>
                 </div>
                 <br />
                 <PDFView title="Cours et TD" items={courses} />

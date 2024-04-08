@@ -10,6 +10,7 @@ const Footer = () => {
                 <p className="footer-links">
                     <li className="item"><Link to='/' className="link"><strong style={{ color: '#555555' }}>ACCEUIL</strong> </Link> </li>
                     <li className="item"><Link to='/coursesexams' className="link"><strong style={{ color: '#555555' }}>COURS & EXAMENS</strong></Link> </li>
+                    <li className="item"><Link to='/file' className="link"><strong style={{ color: '#555555' }}>UPLOAD</strong></Link> </li>
                     <li className="item"><Link to='/about' className="link"><strong style={{ color: '#555555' }}>A PROPOS</strong></Link> </li>
                     <li className="item"><Link to='/contact' className="link"><strong style={{ color: '#555555' }}>CONTACT</strong></Link> </li>
                 </p>
