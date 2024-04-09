@@ -2,8 +2,7 @@
 
 ## Project Overview
 
-![Project Image](/project.png)
-
+![Project Image](./projet.png)
 Welcome to the Enstab Course and Exam Portal, a comprehensive platform designed to facilitate access to courses and exams for students and colleagues at ENSTAB. Our project aims to streamline the process of finding courses and exams, making it easier for users to navigate and locate the resources they need.
 
 ## Project Features
