@@ -1,6 +1,5 @@
 import './App.css';
-import {  Routes, Route } from 'react-router-dom';
-
+import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
 import CoursesExams from './pages/Courses/Courses';
@@ -107,7 +106,7 @@ import Biomasse from './pages/Courses/3TA/setp/Biomasse';
 import Nucleaires from './pages/Courses/3TA/setp/Technucleaires';
 //3SIC
 import Lean from './pages/Courses/3TA/sic/Lean';
-import BGD from  './pages/Courses/3TA/sic/BGD';
+import BGD from './pages/Courses/3TA/sic/BGD';
 import GEI from './pages/Courses/3TA/sic/GEI';
 import GRI from './pages/Courses/3TA/sic/GRI';
 import SCM from './pages/Courses/3TA/sic/SCM';
@@ -132,12 +131,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    
+
     <div>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/coursesexams' element={<CoursesExams  />} />
+        <Route path='/coursesexams' element={<CoursesExams />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='TA1' element={<TA1 />} />
@@ -166,7 +165,7 @@ function App() {
         <Route path='Anglais1' element={<Anglais1 />} />
         <Route path='Communication' element={<Communication />} />
         <Route path='ComptaGest' element={<ComptaGest />} />
-        
+
         <Route path='AN' element={<AN />} />
         <Route path='Optimisation' element={<Optimisation />} />
         <Route path='Java' element={<Java />} />
@@ -202,7 +201,7 @@ function App() {
         <Route path='Anglais4' element={<Anglais4 />} />
         <Route path='Culture' element={<Culture />} />
 
-      
+
         <Route path='MFMH' element={<MFMH />} />
         <Route path='MEconvert' element={<MEconvert />} />
         <Route path='BDSE' element={<BDSE />} />
@@ -225,8 +224,8 @@ function App() {
         <Route path='Langue3' element={<Langue3 />} />
         <Route path='Anglais5' element={<Anglais5 />} />
         <Route path='PPP' element={<PPP />} />
-        
-        
+
+
         <Route path='SystRE' element={<SystRE />} />
         <Route path='REI' element={<REI />} />
         <Route path='Audit' element={<Audit />} />
@@ -238,7 +237,7 @@ function App() {
         <Route path='Biomasse' element={<Biomasse />} />
         <Route path='Nucleaires' element={<Nucleaires />} />
 
-        
+
         <Route path='Lean' element={<Lean />} />
         <Route path='BGD' element={<BGD />} />
         <Route path='GEI' element={<GEI />} />
@@ -248,7 +247,7 @@ function App() {
         <Route path='CPP' element={<CPP />} />
         <Route path='ERP3' element={<ERP3 />} />
 
-        
+
 
 
         <Route path='FPGA' element={<FPGA />} />
@@ -264,9 +263,9 @@ function App() {
 
       </Routes>
       <Footer />
-      
+
     </div>
-  
+
   );
 }
 
