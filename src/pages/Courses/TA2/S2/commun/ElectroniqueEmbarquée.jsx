@@ -30,18 +30,7 @@ export default function ElectroniqueEmbarquee() {
         }
     };
 
-    const removeDuplicateNames = (arr) => {
-        const uniqueNames = [];
-        const seen = {};
-        arr.forEach(course => {
-            const name = course.name.toUpperCase(); // Convert name to uppercase
-            if (!seen[name]) {
-                seen[name] = true;
-                uniqueNames.push(name);
-            }
-        });
-        return uniqueNames.sort(); // Sort unique names alphabetically
-    };
+   
 
     useEffect(() => {
         getCourses();
@@ -52,7 +41,7 @@ export default function ElectroniqueEmbarquee() {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong> Gestion des Projets </strong></h1>
+                    <h1 style={{ textAlign: 'center' }}><strong>Electronique pour les systèmes embarqués</strong></h1>
                 </div>
                 <br />
                 <PDFView title="Cours et TD" items={courses} />

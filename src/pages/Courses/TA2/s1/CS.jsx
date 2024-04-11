@@ -9,7 +9,7 @@ export default function CS() {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "cs" && course.examen === 0
+                course.matiere === "cs" && course.examen === 0 && course.id !== 254
 
             ));
             setCourses(filteredCourses);
@@ -30,19 +30,7 @@ export default function CS() {
         }
     };
 
-    const removeDuplicateNames = (arr) => {
-        const uniqueNames = [];
-        const seen = {};
-        arr.forEach(course => {
-            const name = course.name.toUpperCase(); // Convert name to uppercase
-            if (!seen[name]) {
-                seen[name] = true;
-                uniqueNames.push(name);
-            }
-        });
-        return uniqueNames.sort(); // Sort unique names alphabetically
-    };
-
+  
     useEffect(() => {
         getCourses();
         getExams();
@@ -52,11 +40,12 @@ export default function CS() {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong> Calcul Scientifique</strong></h1>
+                    <h1 style={{ textAlign: 'center' }}><strong> Gestion des Projets </strong></h1>
                 </div>
+                <br />
                 <PDFView title="Cours et TD" items={courses} />
+                <br />
                 <PDFView title="Ds et Examens" items={exams} />
-
             </main>
         </body>
     );

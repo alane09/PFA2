@@ -9,7 +9,7 @@ const AN = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "Algo" && course.examen === 0
+                course.matiere === "annum" && course.examen === 0
 
             ));
             setCourses(filteredCourses);
@@ -22,7 +22,7 @@ const AN = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "Algo" && course.examen === 1
+                course.matiere === "annul" && course.examen === 1
             ));
             setExams(filteredExams);
         } catch (error) {
@@ -30,19 +30,7 @@ const AN = () => {
         }
     };
 
-    const removeDuplicateNames = (arr) => {
-        const uniqueNames = [];
-        const seen = {};
-        arr.forEach(course => {
-            const name = course.name.toUpperCase(); // Convert name to uppercase
-            if (!seen[name]) {
-                seen[name] = true;
-                uniqueNames.push(name);
-            }
-        });
-        return uniqueNames.sort(); // Sort unique names alphabetically
-    };
-
+ 
     useEffect(() => {
         getCourses();
         getExams();

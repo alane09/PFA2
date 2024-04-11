@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios';
 import PDFView from '../../../../components/PdfViewer';
 //exception fl examen=1 mouch 0 
-const RDM = () => {
+const Transfert= () => {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
 
@@ -32,18 +32,7 @@ const RDM = () => {
         }
     };
 
-    const removeDuplicateNames = (arr) => {
-        const uniqueNames = [];
-        const seen = {};
-        arr.forEach(course => {
-            const name = course.name.toUpperCase(); // Convert name to uppercase
-            if (!seen[name]) {
-                seen[name] = true;
-                uniqueNames.push(name);
-            }
-        });
-        return uniqueNames.sort(); // Sort unique names alphabetically
-    };
+   
 
     useEffect(() => {
         getCourses();
@@ -64,4 +53,4 @@ const RDM = () => {
     );
 };
 
-export default RDM;
+export default Transfert;

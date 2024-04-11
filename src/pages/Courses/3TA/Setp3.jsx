@@ -3,61 +3,36 @@ import { Link } from "react-router-dom";
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 function SETP3() {
     const Industrie4 = [
-        { name: "Big data : General overview", link: "/Courses/3TA/commun/bigdata" },
-        { name: "Management de l'innovation", link: "/Courses/3TA/commun/innovation" },
-        { name: "IoT&Cloud Computing ", link: "/Courses/3TA/commun/iot" },
-        { name: "Outils numériques pour l'ingénieur 5 ", link: "/Courses/3TA/commun/retscreen" },
-    ]
-    const SOCIO = [
-        { name: "Analyse Financière", link: "/Courses/3TA/commun/analysefinanciere" },
-        { name: "Projet Professionnel Personnalisé ", link: "/Courses/3TA/commun/PPP" },
-        { name: "Anglais des Affaires", link: "/Courses/3TA/commun/anglais" },
-        { name: "Langue: Allemand ou  Jappnais ", link: "/Courses/3TA/commun/langue" },
-    ]
-    const MdSETP2 = [
-        { name: "Système élecrtique des énergies renouvelables", link: "/Courses/3TA/setp/renewable-energy" },
-        { name: "Réseaux électriques intelligents (smart grid)", link: "/Courses/3TA/setp/reseau" },
-        { name: "Audit énergétique et maitrise de l'énergie", link: "/Courses/3TA/setp/audit" },
-        { name: "SME", link: "/Courses/3TA/setp/sme" },
-        { name: "Energétique Thermique des bâtiments et bâtiments HQE", link: "/Courses/3TA/setp/HQE" },
-    
-    ]
-    const MdSETP3 = [
-        { name: "Centrales solaires", link: "/Courses/3TA/setp/c.solaires" },
-        { name: "Energie éolienne", link: "/Courses/3TA/setp/éolienne" },
-        { name: "Biocarburants Avancés", link: "/Courses/3TA/setp/biocarburants" },
-        { name: "Valorisation énergétique de la biomasse", link: "/Courses/3TA/setp/biomasse "},
-        { name: "Techniques nucléaires", link: "/Courses/3TA/setp/technucleaires" },
-    ]
-    const columns = [
-        {
-            'label': 'Industrie4',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'SOCIO',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'MdSETP3',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'MdSETP2',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Accéder au cours',
-            'field': 'link',
-            'sort': 'asc',
-            fontSize: '30'
-        }
-
+        { name: "Big data : General overview", link: "/BigData" },
+        { name: "Management de l'innovation", link: "/Innovation" },
+        { name: "IoT&Cloud Computing ", link: "/IOT" },
+        { name: "Outils numériques pour l'ingénieur 5 ", link: "/Outils5" },
     ];
+
+    const SOCIO = [
+        { name: "Analyse Financière", link: "/AnFin" },
+        { name: "Projet Professionnel Personnalisé ", link: "/PPP" },
+        { name: "Anglais des Affaires", link: "/Anglais5" },
+        { name: "Langue: Allemand ou  Jappnais ", link: "/Langue3" },
+    ];
+
+    const MdSETP2 = [
+        { name: "Système élecrtique des énergies renouvelables", link: "/SystRE" },
+        { name: "Réseaux électriques intelligents (smart grid)", link: "/REI" },
+        { name: "Audit énergétique et maitrise de l'énergie", link: "/Audit" },
+        { name: "SME", link: "/SME" },
+        { name: "Energétique Thermique des bâtiments et bâtiments HQE", link: "/Batiments" },
+    ];
+
+    const MdSETP3 = [
+        { name: "Centrales solaires", link: "/Centrales" },
+        { name: "Energie éolienne", link: "/Eolienne" },
+        { name: "Biocarburants Avancés", link: "/Bio" },
+        { name: "Valorisation énergétique de la biomasse", link: "/Biomasse" },
+        { name: "Techniques nucléaires", link: "/Nucleaires" },
+    ];
+
+   
     const headerCellStyle = {
         textAlign: 'center',
         border: '0.5px solid black',

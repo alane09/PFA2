@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="footer-distributed">
             <div className="footer-left">
-                <img src="logo.png" alt="image-box" className="logo" style={{ marginLeft: '1rem', width: '300px', height: '100' }} />
+                <img src="logo.png" alt="" className="logo" style={{ marginLeft: '1rem', width: '300px', height: '100' }} />
                 <p className="footer-links">
                     <li className="item"><Link to='/' className="link"><strong style={{ color: '#555555' }}>ACCEUIL</strong> </Link> </li>
                     <li className="item"><Link to='/coursesexams' className="link"><strong style={{ color: '#555555' }}>COURS & EXAMENS</strong></Link> </li>
@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <div className="footer-center">
                 <div className="center-link">
-                    <a href="#"><i className="fa fa-phone"></i></a>
+                    <i className="fa fa-phone"></i>
                     <p><strong style={{ color: 'rgb(9, 9, 10)' }}>ENSTA LEARN TEAM  </strong>
                         <a href="tel:+21624640536" style={{ color: 'rgb(14, 111, 223)' }}>+21624640536</a>
                     </p>

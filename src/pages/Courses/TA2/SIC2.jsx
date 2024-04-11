@@ -19,25 +19,7 @@ function SIC2() {
         { name: "Recherche Opérationnelle 2", link: "/RO2" },
         { name: "Six Sigma  ", link: "/Sixsigma" },
     ]
-    const columns = [
-        {
-            'label': 'commun',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'sic',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Accéder au cours',
-            'field': 'link',
-            'sort': 'asc',
-            fontSize: '30'
-        }
-
-    ];
+    
     const headerCellStyle = {
         textAlign: 'center',
         border: '0.5px solid black',

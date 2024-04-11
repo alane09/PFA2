@@ -2,8 +2,7 @@ import React from 'react';
 import './About.css';
 import './footer.css';
 import './style.css' 
-import logo from './logo.png';
-import { Link } from 'react-router-dom';
+
 import Aboutimg from './about.jpg';
 function About() {
     const heroStyle = {

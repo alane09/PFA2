@@ -4,34 +4,21 @@ import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 function Sem21() {
     const matieres = [
         { name: "Recherche Opérationnelle 1", link: "/RO" },
-        { name: "Processus Stochastiques", link: "/Courses/TA2/s1/stochastiques" },
+        { name: "Processus Stochastiques", link: "/Stoch" },
         { name: "Calcul Scientifique", link: "/CS" },
-        { name: "Intelligence Artificielle", link: "/Courses/TA2/s1/ai" },
+        { name: "Intelligence Artificielle", link: "/Ai" },
         { name: "Outils numériques pour l'ingénieur 3 : Linux", link: "/Linux" },
         { name: "Résistance des matériaux", link: "/RDM" },
         { name: "Transferts thermiques", link: "/Transfert" },
         { name: "Physique des Matériaux", link: "/PDM" },
         { name: "Techniques de Traitement d'images", link: "/Traitement" },
-        { name: "Fonctions de l’électronique", link: "/Electronique" },
-        { name: "Anglais 3", link: "/Anglais" },
+        { name: "Fonctions de l’électronique", link: "/FctELect" },
+        { name: "Anglais 3", link: "/Anglais3" },
         { name: "Gestion des projets", link: "/GestProj" },
-        { name: "Management des équipes", link: "/Manag-equip" },
+        { name: "Management des équipes", link: "/ManagEquip" },
         { name: "Langue :Allemand ou  Japonais ", link: "/Langue" }
     ];
-    const columns = [
-        {
-            'label': 'Matieres',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Accéder au cours',
-            'field': 'link',
-            'sort': 'asc',
-            fontSize: '30'
-        }
-
-    ];
+   
     const headerCellStyle = {
         textAlign: 'center',
         border: '0.5px solid black',

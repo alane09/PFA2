@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import './Contact.css';
 import L from 'leaflet';
 
-import { Link } from 'react-router-dom';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";

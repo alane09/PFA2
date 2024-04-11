@@ -5,7 +5,9 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light sticky-top">
             <div className="imageBox">
-                <a href="index.html"><img src="logo.png" alt="image-box" className="logo" style={{ marginLeft: '1rem', width: '300px', height: '100' }} /></a>
+                <a href="index.html">
+                    <img src="logo.png" alt="" className="logo" style={{ marginLeft: '1rem', width: '300px', height: '100' }} />
+                </a>
             </div>
             <button className="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#nav"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

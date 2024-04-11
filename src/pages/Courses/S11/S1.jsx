@@ -17,20 +17,7 @@ function S11() {
         { name: "Comptabilité et Gestion d’entreprise", link: "/ComptaGest" },
         { name: "Techniques de communication", link: "/Communication " },
     ];
-    const columns = [
-        {
-            'label': 'Matieres',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Accéder au cours',
-            'field': 'link',
-            'sort': 'asc',
-            fontSize:'30'
-        }
-        
-    ];
+  
     const headerCellStyle = {
         textAlign: 'center',
         border: '0.5px solid black',

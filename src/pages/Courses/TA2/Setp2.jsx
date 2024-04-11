@@ -19,25 +19,7 @@ function Setp2() {
         { name: "Mécanique des fluides et machines hydrauliques", link: "/MFMH" },
         { name: "Bilan et dimensionnement des systèmes énergétiques", link: "/BDSE" },
     ]
-    const columns = [
-        {
-            'label': 'commun',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'setp',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Accéder au cours',
-            'field': 'link',
-            'sort': 'asc',
-            fontSize: '30'
-        }
-
-    ];
+   
     const headerCellStyle = {
         textAlign: 'center',
         border: '0.5px solid black',

@@ -31,18 +31,7 @@ const MEconvert= () => {
         }
     };
 
-    const removeDuplicateNames = (arr) => {
-        const uniqueNames = [];
-        const seen = {};
-        arr.forEach(course => {
-            const name = course.name.toUpperCase(); // Convert name to uppercase
-            if (!seen[name]) {
-                seen[name] = true;
-                uniqueNames.push(name);
-            }
-        });
-        return uniqueNames.sort(); // Sort unique names alphabetically
-    };
+   
 
     useEffect(() => {
         getCourses();

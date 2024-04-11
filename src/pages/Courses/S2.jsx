@@ -12,25 +12,12 @@ function S12() {
         { name: "Thermodynamique pour l'ingénieur", link: "/Thermodynamique" },
         { name: "Electronique des composants", link: "/Electcomposants" },
         { name: "Asservissement et Régulation Industrielle", link: "/Asservissement" },
-        { name: "Anglais 2", link: "/Courses/S12/anglais-2" },
-        { name: "Droit ", link: "/Courses/S12/droit " },
-        { name: "Philo pour l'ingénieur ", link: "/Courses/S12/philo" },
-        { name: "Economie et économie verte", link: "/Courses/S12/ecoverte" },
+        { name: "Anglais 2", link: "/Anglais2" },
+        { name: "Droit ", link: "/Droit " },
+        { name: "Philo pour l'ingénieur ", link: "/Philo" },
+        { name: "Economie et économie verte", link: "/Ecoverte" },
     ];
-    const columns = [
-        {
-            'label': 'Matieres',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Accéder au cours',
-            'field': 'link',
-            'sort': 'asc',
-            fontSize: '30'
-        }
-
-    ];
+  
     const headerCellStyle = {
         textAlign: 'center',
         border: '0.5px solid black',

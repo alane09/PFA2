@@ -15,11 +15,7 @@ import  Optimisation  from './images/optimisation.png'
 import  Thermo  from './images/thermo.jpeg'
 import Asservi from './images/images.png'
 import Catia from './images/catia.jpeg'
-import  Recherche from './images/ro.png'
-import  AI  from './images/ai.jpeg'
-import  Modelis  from './images/download.jpeg'
-import API  from './images/api.jpeg'
-import Capteurs  from './images/capteurs.jpeg'
+
 
 
 function TA1() {
@@ -59,9 +55,9 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
+                                            
                                                 <img src={Analyse} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                           
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
@@ -80,9 +76,8 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
-                                                <img src={Proba} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            <img src={Proba} style={{ width: '100%', height: '150px' }} alt="" />
+
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
@@ -100,9 +95,8 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
-                                                <img src={C} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            <img src={C} style={{ width: '100%', height: '150px' }} alt="" />
+
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
@@ -119,16 +113,15 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
-                                                <img src={Fluides} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            <img src={Fluides} style={{ width: '100%', height: '150px' }} alt="" />
+
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
                                                         <a href="/TA1">1TA</a> <a href="/S11">S1</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title">
-                                                    <a href="#">Mécanique des fluides
+                                                    <a href="/MecaniqueFluides">Mécanique des fluides
                                                     </a>
                                                 </h2>
                                             </figcaption>
@@ -138,16 +131,15 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
-                                                <img src={Mecaniques} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            <img src={Mecaniques} style={{ width: '100%', height: '150px' }} alt="" />
+
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
                                                         <a href="/TA1">1TA</a> <a href="/S11">S1</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title">
-                                                    <a href="#">Systèmes mécaniques pour la Robotique
+                                                    <a href="/SystemesMecaniques">Systèmes mécaniques pour la Robotique
                                                     </a>
                                                 </h2>
                                             </figcaption>
@@ -157,16 +149,15 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
-                                                <img src={Quantique} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            <img src={Quantique} style={{ width: '100%', height: '150px' }} alt="" />
+
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
                                                         <a href="/TA1">1TA</a> <a href="/S11">S1</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title">
-                                                    <a href="#">Physique pour l'ingénieur
+                                                    <a href="/Physique">Physique pour l'ingénieur
                                                     </a>
                                                 </h2>
                                             </figcaption>
@@ -176,15 +167,14 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
-                                                <img src={Stat} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            <img src={Stat} style={{ width: '100%', height: '150px' }} alt="" />
+
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
                                                         <a href="/TA1">1TA</a> <a href="/S12">S2</a>                                                    </li>
                                                 </ol>
-                                                <h2 class="post-title"> <a href="#"> Statistiques pour l'ingénieur </a> </h2>
+                                                <h2 class="post-title"> <a href="Statistiques"> Statistiques pour l'ingénieur </a> </h2>
 
 
                                             </figcaption>
@@ -194,16 +184,14 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
-                                                <img src={Java} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            <img src={Java} style={{ width: '100%', height: '150px' }} alt="" />
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
                                                         <a href="/TA1">1TA</a> <a href="/S12">S2</a>                                                    </li>
                                                 </ol>
                                                 <h2 class="post-title">
-                                                    <a href="#"> Programmation orientée objet
+                                                    <a href="/Java"> Programmation orientée objet
                                                     </a>
                                                 </h2>
                                             </figcaption>
@@ -213,9 +201,9 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
+                                            
                                                 <img src={Optimisation} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
@@ -223,7 +211,7 @@ function TA1() {
                                                     </li>
                                                 </ol>
                                                 <h2 class="post-title">
-                                                    <a href="#">Optimisation
+                                                    <a href="/Optimisation">Optimisation
                                                     </a>
                                                 </h2>
                                             </figcaption>
@@ -233,9 +221,9 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
+                                            
                                                 <img src={Thermo} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
@@ -243,7 +231,7 @@ function TA1() {
                                                     </li>
                                                 </ol>
                                                 <h2 class="post-title">
-                                                    <a href="#">Thermodynamique pour l'ingénieur</a>
+                                                    <a href="/Thermoqynamique">Thermodynamique pour l'ingénieur</a>
                                                 </h2>
                                             </figcaption>
                                         </figure>
@@ -252,9 +240,9 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
+                                            
                                                 <img src={Asservi} style={{ width: '100%', height: '150px' }}  alt="" />
-                                            </a>
+                                            
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
@@ -263,7 +251,7 @@ function TA1() {
 
                                                 </ol>
                                                 <h2 class="post-title">
-                                                    <a href="#">Asservissement et Régulation Industrielle
+                                                    <a href="Asservissement">Asservissement et Régulation Industrielle
                                                     </a>
                                                 </h2>
                                             </figcaption>
@@ -273,9 +261,9 @@ function TA1() {
                                 <li class="post" data-category="1TA">
                                     <article>
                                         <figure>
-                                            <a href="#">
-                                                <img src={Catia} style={{ width: '100%', height: '150px' }} alt="" />
-                                            </a>
+                                            
+                                            <img src={Catia} style={{ width: '100%', height: '150px' }} alt="" />
+                                            
                                             <figcaption>
                                                 <ol class="post-categories">
                                                     <li>
@@ -284,7 +272,7 @@ function TA1() {
 
                                                 </ol>
                                                 <h2 class="post-title" >
-                                                    <a href="#">Catia  
+                                                    <a href="/Catia">Catia  
                                                     </a>
                                                 </h2>
                                             </figcaption>

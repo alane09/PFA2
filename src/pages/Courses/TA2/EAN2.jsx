@@ -9,9 +9,9 @@ function EAN2() {
         { name: "Electronique pour les systèmes embarqués", link: "/ElectroniqueEmbarquee" },
         { name: "Automate programmable industriel", link: "/API" },
         { name: "Outils numériques pour l'ingénieur 4", link: "/Outils" },
-        { name: "Anglais 4  ", link: "/Anglais" },
+        { name: "Anglais 4  ", link: "/Anglais4" },
         { name: "Culture entrepreneuriale", link: "/Culture" },
-        { name: "Langue: Allemand ou  Jappnais ", link: "/Langue" },
+        { name: "Langue: Allemand ou  Jappnais ", link: "/Langue2" },
     ]
     const ean  = [
         { name: "Conception des systèmes électroniques", link: "/Conception" },
@@ -19,25 +19,7 @@ function EAN2() {
         { name: "Électronique hyperfréquence", link: "/Hyper" },
         { name: "Fabrication et techniques de carac. De nanomatériaux et nanocomposites", link: "/Nanocomposite " },
     ]
-    const columns = [
-        {
-            'label': 'commun',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'ean',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Accéder au cours',
-            'field': 'link',
-            'sort': 'asc',
-            fontSize: '30'
-        }
-
-    ];
+    
     const headerCellStyle = {
         textAlign: 'center',
         border: '0.5px solid black',

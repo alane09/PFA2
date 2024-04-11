@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import PDFView from '../../../components/PdfViewer';
 export default function Anglais2() {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
@@ -29,18 +30,7 @@ export default function Anglais2() {
         }
     };
 
-    const removeDuplicateNames = (arr) => {
-        const uniqueNames = [];
-        const seen = {};
-        arr.forEach(course => {
-            const name = course.name.toUpperCase(); // Convert name to uppercase
-            if (!seen[name]) {
-                seen[name] = true;
-                uniqueNames.push(name);
-            }
-        });
-        return uniqueNames.sort(); // Sort unique names alphabetically
-    };
+   
 
     useEffect(() => {
         getCourses();
@@ -51,24 +41,12 @@ export default function Anglais2() {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong> Anglais 2</strong></h1>
+                    <h1 style={{ textAlign: 'center' }}><strong> Anglais 2 </strong></h1>
                 </div>
-                <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong>Cours et TD</strong></h1>
-                    <ul style={{ textAlign: 'left', fontSize: '20px' }}>
-                        <br />
-                        <h2 style={{ textAlign: 'left' }}><strong>Les Cours et TDs seront disponibles ultérieurement.</strong></h2>
-
-                    </ul>
-                </div>
-                <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong>Ds et Examens</strong></h1>
-                    <ul style={{ textAlign: 'left', fontSize: '20px' }}>
-                        <br />
-                        <h2 style={{ textAlign: 'left' }}><strong>Les Ds et examens seront disponibles ultérieurement.</strong></h2>
-
-                    </ul>
-                </div>
+                <br />
+                <PDFView title="Cours et TD" items={courses} />
+                <br />
+                <PDFView title="Ds et Examens" items={exams} />
             </main>
         </body>
     );

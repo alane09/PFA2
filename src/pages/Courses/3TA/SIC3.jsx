@@ -3,60 +3,33 @@ import { Link } from "react-router-dom";
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 function SIC3() {
     const Industrie4 = [
-        { name: "Big data : General overview", link: "/Courses/3TA/commun/bigdata" },
-        { name: "Management de l'innovation", link: "/Courses/3TA/commun/innovation" },
-        { name: "IoT&Cloud Computing ", link: "/Courses/3TA/commun/iot" },
-        { name: "Outils numériques pour l'ingénieur 5 ", link: "/Courses/3TA/commun/retscreen" },
-    ]
+        { name: "Big data : General overview", link: "/BigData" },
+        { name: "Management de l'innovation", link: "/Innovation" },
+        { name: "IoT&Cloud Computing ", link: "/IOT" },
+        { name: "Outils numériques pour l'ingénieur 5 ", link: "/Outils5" },
+    ];
+
     const SOCIO = [
-        { name: "Analyse Financière", link: "/Courses/3TA/commun/analysefinanciere" },
-        { name: "Projet Professionnel Personnalisé ", link: "/Courses/3TA/commun/PPP" },
-        { name: "Anglais des Affaires", link: "/Courses/3TA/commun/anglais" },
-        { name: "Langue: Allemand ou  Jappnais ", link: "/Courses/3TA/commun/langue" },
-    ]
+        { name: "Analyse Financière", link: "/AnFin" },
+        { name: "Projet Professionnel Personnalisé ", link: "/PPP" },
+        { name: "Anglais des Affaires", link: "/Anglais5" },
+        { name: "Langue: Allemand ou  Jappnais ", link: "/Langue3" },
+    ];
     const MdSIC2 = [
-        { name: "Lean Management", link: "/Courses/3TA/sic/" },
-        { name: "Big data : gestion et analyse des données massives (BGD)", link: "/Courses/3TA/sic/BGD" },
-        { name: "Management Qualité Sécurité Environnement (QSE)", link: "/Courses/3TA/sic/QSE" },
-        { name: "Gestion des effluents industriels", link: "/Courses/3TA/sic/effluents " },
-        { name: "Gestion des risques industriels", link: "/Courses/3TA/sic/risques " },
+        { name: "Lean Management", link: "/Lean" },
+        { name: "Big data : gestion et analyse des données massives (BGD)", link: "/BGD" },
+        { name: "Management Qualité Sécurité Environnement (QSE)", link: "/QSE" },
+        { name: "Gestion des effluents industriels", link: "/GEI " },
+        { name: "Gestion des risques industriels", link: "/GRI " },
 
     ]
     const MdSIC3 = [
-        { name: "Supply Chain Management (SCM)", link: "/Courses/3TA/sic/SCM" },
-        { name: "Management des opérations 2", link: "/Courses/3TA/sic/MO2" },
-        { name: "Conception de Produits et de Processus", link: "/Courses/3TA/sic/ProduitsetProcessus " },
-        { name: "ERP3", link: "/Courses/3TA/sic/ERP3 " },
+        { name: "Supply Chain Management (SCM)", link: "/SCM" },
+        { name: "Management des opérations 2", link: "/MO2" },
+        { name: "Conception de Produits et de Processus", link: "/CPP " },
+        { name: "ERP3", link: "/ERP3 " },
     ]
-    const columns = [
-        {
-            'label': 'Industrie4',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'SOCIO',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'MdSIC3',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'MdSIc2',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Accéder au cours',
-            'field': 'link',
-            'sort': 'asc',
-            fontSize: '30'
-        }
-
-    ];
+   
     const headerCellStyle = {
         textAlign: 'center',
         border: '0.5px solid black',

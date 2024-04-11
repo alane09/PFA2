@@ -3,59 +3,31 @@ import { Link } from "react-router-dom";
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 function EAN3() {
     const Industrie4 = [
-        { name: "Big data : General overview", link: "/Courses/3TA/commun/bigdata" },
-        { name: "Management de l'innovation", link: "/Courses/3TA/commun/innovation" },
-        { name: "IoT&Cloud Computing ", link: "/Courses/3TA/commun/iot" },
-        { name: "Outils numériques pour l'ingénieur 5 ", link: "/Courses/3TA/commun/retscreen" },
-    ]
-    const SOCIO=[
-        { name: "Analyse Financière", link: "/Courses/3TA/commun/analysefinanciere" },
-        { name: "Projet Professionnel Personnalisé ", link: "/Courses/3TA/commun/PPP" },
-        { name: "Anglais des Affaires", link: "/Courses/3TA/commun/anglais" },
-        { name: "Langue: Allemand ou  Jappnais ", link: "/Courses/3TA/commun/langue" },
-    ]
-    const Elect= [
-        { name: "Architecture des systèmes reconfigurables (FPGA et SOC …)", link: "/Courses/3TA/ean/systreconfigurable" },
-        { name: "Traitement de vidéo (Codec)**", link: "/Courses/3TA/ean/codec" },
-        { name: "Interfaçage et communication des systèmes embarqués temps réel", link: "/Courses/3TA/ean/interfaçage" },
-        { name: "Méthodologies de conception des circuits numériques embarqués", link: "/Courses/3TA/ean/conceptioncircuits" },
-        { name: "Programmation Graphique", link: "/Courses/3TA/ean/proggraphique" },
-
-    ]
-    const Nanotech = [
-        { name: "Modélisation des microsystèmes", link: "/Courses/3TA/ean/microsystemes" },
-        { name: "Nanotechnolgie appliquée aux composants", link: "/Courses/3TA/ean/nanocomposants" },
-        { name: "Mécanique des fluides et machines hydrauliques", link: "/Courses/3TA/ean/MFMH" },
-    ]
-    const columns = [
-        {
-            'label': 'Industrie4',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'SOCIO',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Elect',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Nanotech',
-            'field': 'name',
-            'sort': 'asc'
-        },
-        {
-            'label': 'Accéder au cours',
-            'field': 'link',
-            'sort': 'asc',
-            fontSize: '30'
-        }
-
+        { name: "Big data : General overview", link: "/BigData" },
+        { name: "Management de l'innovation", link: "/Innovation" },
+        { name: "IoT&Cloud Computing ", link: "/IOT" },
+        { name: "Outils numériques pour l'ingénieur 5 ", link: "/Outils5" },
     ];
+
+    const SOCIO = [
+        { name: "Analyse Financière", link: "/AnFin" },
+        { name: "Projet Professionnel Personnalisé ", link: "/PPP" },
+        { name: "Anglais des Affaires", link: "/Anglais5" },
+        { name: "Langue: Allemand ou  Jappnais ", link: "/Langue3" },
+    ];
+    const Elect = [
+        { name: "Architecture des systèmes reconfigurables (FPGA et SOC …)", link: "/FPGA" },
+        { name: "Traitement de vidéo (Codec)**", link: "/Video" },
+        { name: "Interfaçage et communication des systèmes embarqués temps réel", link: "/Interfacage" },
+        { name: "Méthodologies de conception des circuits numériques embarqués", link: "/ConceptionEmbarque" },
+        { name: "Programmation Graphique", link: "/Graph" },
+    ];
+
+    const Nanotech = [
+        { name: "Modélisation des microsystèmes", link: "/Micro" },
+        { name: "Nanotechnologie appliquée aux composants", link: "/NanoComp" },
+    ];
+   
     const headerCellStyle = {
         textAlign: 'center',
         border: '0.5px solid black',
@@ -79,7 +51,7 @@ function EAN3() {
         <div>
             <body>
               <main>
-                    <div class="container">
+                    <div className="container">
                         <h1 style={{ textAlign: 'center' }}><strong> 3 Electronique Avancée et Nanotechnologies</strong> </h1>
                         <br />
                         <br />
@@ -94,9 +66,9 @@ function EAN3() {
 
                                 </tr>
                             </MDBTableHead>
-                            <MDBTableBody >
+                            <MDBTableBody>
                                 {Elect.map((Elect, index) => (
-                                    <tr key={index}>
+                                    <tr key={Elect.name + index}>
                                         <td style={rowCellStyle}><strong>{Elect.name}</strong></td>
                                         <td style={rowCellStylebutton}><Link to={Elect.link} className="inside-page__btn1">Accéder</Link></td>
                                     </tr>
@@ -114,9 +86,9 @@ function EAN3() {
 
                                 </tr>
                             </MDBTableHead>
-                            <MDBTableBody >
+                            <MDBTableBody>
                                 {Nanotech.map((Nanotech, index) => (
-                                    <tr key={index}>
+                                    <tr key={Nanotech.name + index}>
                                         <td style={rowCellStyle}><strong>{Nanotech.name}</strong></td>
                                         <td style={rowCellStylebutton}><Link to={Nanotech.link} className="inside-page__btn1">Accéder</Link></td>
                                     </tr>
@@ -134,9 +106,9 @@ function EAN3() {
 
                                 </tr>
                             </MDBTableHead>
-                            <MDBTableBody >
+                            <MDBTableBody>
                                 {Industrie4.map((Industrie4, index) => (
-                                    <tr key={index}>
+                                    <tr key={Industrie4.name + index}>
                                         <td style={rowCellStyle}><strong>{Industrie4.name}</strong></td>
                                         <td style={rowCellStylebutton}><Link to={Industrie4.link} className="inside-page__btn1">Accéder</Link></td>
                                     </tr>
@@ -154,9 +126,9 @@ function EAN3() {
 
                                 </tr>
                             </MDBTableHead>
-                            <MDBTableBody >
+                            <MDBTableBody>
                                 {SOCIO.map((SOCIO, index) => (
-                                    <tr key={index}>
+                                    <tr key={`${SOCIO.name}-${index}`}>
                                         <td style={rowCellStyle}><strong>{SOCIO.name}</strong></td>
                                         <td style={rowCellStylebutton}><Link to={SOCIO.link} className="inside-page__btn1">Accéder</Link></td>
                                     </tr>
