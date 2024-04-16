@@ -10,7 +10,7 @@ const BDSE = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "conversion" && course.examen === 0
+                course.matiere === "conversion" && course.examen === 1
 
             ));
             setCourses(filteredCourses);
@@ -23,7 +23,7 @@ const BDSE = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "conversion" && course.examen === 1
+                course.matiere === "conversion" && course.examen === 0
             ));
             setExams(filteredExams);
         } catch (error) {

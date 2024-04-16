@@ -41,7 +41,6 @@ import Asservissement from './pages/Courses/S12/Asservissement';
 import Anglais2 from './pages/Courses/S12/Anglais2';
 import Droit from './pages/Courses/S12/Droit';
 import Philo from './pages/Courses/S12/Philo';
-import Ecoverte from './pages/Courses/S12/Eco';
 import Statistiques from './pages/Courses/S12/Stat';
 //2TA S1
 import CalculSc from './pages/Courses/TA2/s1/CS';
@@ -58,7 +57,7 @@ import AI from './pages/Courses/TA2/s1/Ai';
 import ManagEquip from './pages/Courses/TA2/s1/MangEq';
 import Langue from './pages/Courses/TA2/s1/Langue';
 import Anglais3 from './pages/Courses/TA2/s1/Anglais3';
-
+import Ecoverte from './pages/Courses/S12/EcoVerte';
 
 //2TA Commun S2
 import Modelisation from './pages/Courses/TA2/S2/commun/Modelisation';
@@ -176,7 +175,7 @@ function App() {
         <Route path='Anglais2' element={<Anglais2 />} />
         <Route path='Droit' element={<Droit />} />
         <Route path='Philo' element={<Philo />} />
-        <Route path='Eco' element={<Ecoverte />} />
+        <Route path='Ecoverte' element={<Ecoverte />} />
         <Route path='RO' element={<RO />} />
         <Route path='CS' element={<CalculSc />} />
         <Route path='Stoch' element={<Stochastique />} />

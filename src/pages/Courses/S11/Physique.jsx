@@ -10,8 +10,7 @@ const Physique = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "phy" && course.examen === 0 && course.id!==90
-
+                course.matiere === "phy" && course.examen === 0 
             ));
             setCourses(filteredCourses);
         } catch (error) {

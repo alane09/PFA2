@@ -11,7 +11,7 @@ const Asservissement = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "asservi" && course.examen === 0 && course.id !== 104
+                course.matiere === "asservi" && course.examen === 0
 
             ));
             setCourses(filteredCourses);

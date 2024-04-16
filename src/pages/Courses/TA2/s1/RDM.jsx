@@ -12,7 +12,7 @@ const RDM = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "RDM" && course.examen === 1
+                course.matiere === "RDM" && course.examen === 0
 
             ));
             setCourses(filteredCourses);
@@ -25,7 +25,7 @@ const RDM = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "RDM" && course.examen === 0
+                course.matiere === "RDM" && course.examen === 1
             ));
             setExams(filteredExams);
         } catch (error) {

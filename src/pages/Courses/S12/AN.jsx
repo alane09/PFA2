@@ -22,7 +22,7 @@ const AN = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "annul" && course.examen === 1
+                course.matiere === "annum" && course.examen === 1
             ));
             setExams(filteredExams);
         } catch (error) {

@@ -9,7 +9,7 @@ export default function SixSigma() {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "6sig" && course.examen === 0 && course.id !== 254
+                course.matiere === "6sig" && course.examen === 0
 
             ));
             setCourses(filteredCourses);

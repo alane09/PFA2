@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios';
 import PDFView from '../../../../../components/PdfViewer';
+//exception cours=1 examen=0
 const Capteurs = () => {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
@@ -10,7 +11,7 @@ const Capteurs = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "capteur" && course.examen === 0
+                course.matiere === "capteur" && course.examen === 1
 
             ));
             setCourses(filteredCourses);
@@ -23,7 +24,7 @@ const Capteurs = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "capteur" && course.examen === 1 && course.id !== 260
+                course.matiere === "capteur" && course.examen === 0
             ));
             setExams(filteredExams);
         } catch (error) {

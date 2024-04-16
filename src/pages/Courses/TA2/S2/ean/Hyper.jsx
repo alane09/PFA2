@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import PDFView from '../../../../../components/PdfViewer';
+//exception fl cours w examen 
 export default function ElectroniqueHyper() {
   const [courses, setCourses] = useState([]);
   const [exams, setExams] = useState([]);
@@ -9,7 +10,7 @@ export default function ElectroniqueHyper() {
     try {
       const response = await axios.get('http://localhost:8080/api/exams');
       const filteredCourses = response.data.filter(course => (
-        course.matiere === "hyper" && course.examen === 0 && course.id !== 266
+        course.matiere === "hyper" && course.examen === 1 
 
       ));
       setCourses(filteredCourses);
@@ -22,7 +23,7 @@ export default function ElectroniqueHyper() {
     try {
       const response = await axios.get('http://localhost:8080/api/exams');
       const filteredExams = response.data.filter(course => (
-        course.matiere === "hyper" && course.examen === 1
+        course.matiere === "hyper" && course.examen === 0
       ));
       setExams(filteredExams);
     } catch (error) {

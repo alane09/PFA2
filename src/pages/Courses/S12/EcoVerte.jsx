@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import PDFView from '../../../components/PdfViewer';
-
-const SemiConducteurs = () => {
+const Eco= () => {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
 
@@ -10,7 +9,7 @@ const SemiConducteurs = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredCourses = response.data.filter(course => (
-                course.matiere === "semi" && course.examen === 0
+                course.matiere === "annum" && course.examen === 0
 
             ));
             setCourses(filteredCourses);
@@ -23,7 +22,7 @@ const SemiConducteurs = () => {
         try {
             const response = await axios.get('http://localhost:8080/api/exams');
             const filteredExams = response.data.filter(course => (
-                course.matiere === "semi" && course.examen === 1
+                course.matiere === "annum" && course.examen === 1
             ));
             setExams(filteredExams);
         } catch (error) {
@@ -31,7 +30,7 @@ const SemiConducteurs = () => {
         }
     };
 
-   
+
     useEffect(() => {
         getCourses();
         getExams();
@@ -41,7 +40,7 @@ const SemiConducteurs = () => {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong> Semi Conducteurs</strong></h1>
+                    <h1 style={{ textAlign: 'center' }}><strong> Economie et économie verte </strong></h1>
                 </div>
                 <PDFView title="Cours et TD" items={courses} />
                 <PDFView title="Ds et Examens" items={exams} />
@@ -51,5 +50,4 @@ const SemiConducteurs = () => {
     );
 };
 
-
-export default SemiConducteurs;
+export default Eco;

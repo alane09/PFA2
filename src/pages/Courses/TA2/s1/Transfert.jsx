@@ -2,7 +2,6 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios';
 import PDFView from '../../../../components/PdfViewer';
-//exception fl examen=1 mouch 0 
 const Transfert= () => {
     const [courses, setCourses] = useState([]);
     const [exams, setExams] = useState([]);
