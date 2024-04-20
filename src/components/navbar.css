@@ -61,3 +61,40 @@
 .navbar-nav .dropdown-toggle {
     padding: 0.5rem;
 }
+.search-box {
+    display: flex;
+    align-items: center;
+    max-width: 1000px
+}
+
+.search-input {
+    flex: 1;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+   
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    /* Change border color on focus */
+}
+
+.search-button {
+    margin-left: 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

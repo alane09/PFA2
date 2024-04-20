@@ -129,10 +129,15 @@ import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const handleSearch = (query) => {
+    // Logic for searching
+    console.log("Searching for:", query);
+    // You can put your search logic here
+  };
   return (
 
     <div>
-      <Navbar />
+      <Navbar onSearch={handleSearch} />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/coursesexams' element={<CoursesExams />} />

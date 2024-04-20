@@ -53,15 +53,14 @@ function Home() {
           <h2 style={{ textAlign: 'left' }}> Votre destination unique pour les ressources d'apprentissage en ligne. </h2>
           <h2 style={{ textAlign: 'left' }}> L’Ecole Nationale des Sciences et Technologies Avancées de Borj Cédria, créée en 2014,  est  la première grande école spécialisée en Technologies Avancées en Tunisie. </h2>
           <br />
+          <h1 style={{ textAlign: 'center ' }}>LOCALISATION ENSTAB </h1>
+          {/* Map container */}
+          <div id="map" style={{ width: '100%', height: '400px' }}></div>
           <br />
          
         </div>
 
-        <div className='container'>
-          <h1 style={{ textAlign: 'center ' }}>LOCALISATION ENSTAB </h1>
-          {/* Map container */}
-          <div id="map" style={{ width: '100%', height: '400px' }}></div>
-        </div>
+        
       </main>
     </div>
   )
